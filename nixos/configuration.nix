@@ -1,7 +1,10 @@
-{ config, pkgs, inputs, ... }:
-
 {
-  imports = [ ./hardware-configuration.nix ];
+  config,
+  pkgs,
+  inputs,
+  ...
+}: {
+  imports = [./hardware-configuration.nix];
 
   users.users.elepot.packages = with pkgs; [
     # cli tools
@@ -16,14 +19,15 @@
     toybox
     nmap
     libnotify
+    alejandra # .nix formatter
 
     # tui
     neovim
-  
+
     # gui
     inputs.zen-browser.packages.${system}.specific
     obsidian
-    (blender.override { cudaSupport = true; })
+    (blender.override {cudaSupport = true;})
     alacritty # terminal
     vesktop # discord client
     swayimg
@@ -98,7 +102,7 @@
   };
 
   services.xserver.enable = true;
-  services.xserver.videoDrivers = [ "nvidia" ];
+  services.xserver.videoDrivers = ["nvidia"];
 
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
@@ -125,9 +129,9 @@
 
   services.printing = {
     enable = true;
-    drivers = [ pkgs.cups-brother-hl1210w ];
+    drivers = [pkgs.cups-brother-hl1210w];
   };
-  
+
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
 
@@ -142,7 +146,7 @@
 
   systemd.services.keymapperd = {
     enable = true;
-    wantedBy = [ "multi-user.target" ];
+    wantedBy = ["multi-user.target"];
     serviceConfig = {
       ExecStart = ''${pkgs.keymapper}/bin/keymapperd'';
     };
@@ -151,7 +155,7 @@
   users.users.elepot = {
     isNormalUser = true;
     description = "ELEPOT";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = ["networkmanager" "wheel"];
   };
 
   programs.niri.enable = true;
