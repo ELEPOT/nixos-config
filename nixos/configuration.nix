@@ -15,6 +15,7 @@
     pamixer
     toybox
     nmap
+    libnotify
 
     # tui
     neovim
