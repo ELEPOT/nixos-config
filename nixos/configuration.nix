@@ -32,6 +32,7 @@
     vesktop # discord client
     swayimg
     bottles
+    krita
 
     # desktop
     eww
