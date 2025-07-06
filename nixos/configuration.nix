@@ -34,6 +34,7 @@
     bottles
     krita
     xorg.xeyes
+    chromium
 
     # desktop
     #    eww
