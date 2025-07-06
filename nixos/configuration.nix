@@ -48,7 +48,6 @@
     #    kdePackages.xdg-desktop-portal-kde
     #    xsettingsd
     gnome-tweaks
-    chrome-gnome-shell
   ];
 
   boot.loader.systemd-boot.enable = true;
@@ -121,6 +120,8 @@
       experimental-features=['scale-monitor-framebuffer', 'xwayland-native-scaling']
     '';
   };
+
+  services.gnome.gnome-browser-connector.enable = true;
 
   services.xserver.xkb = {
     layout = "tw";
