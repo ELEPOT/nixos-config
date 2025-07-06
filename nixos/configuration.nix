@@ -37,7 +37,7 @@
 
     # desktop
     #    eww
-    #    wl-clipboard
+    wl-clipboard
     #    labwc
     #    xwayland-satellite
     #    fuzzel # app launcher
@@ -48,6 +48,7 @@
     #    kdePackages.xdg-desktop-portal-kde
     #    xsettingsd
     gnome-tweaks
+    chrome-gnome-shell
   ];
 
   boot.loader.systemd-boot.enable = true;
