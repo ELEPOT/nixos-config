@@ -121,8 +121,6 @@
     '';
   };
 
-  services.gnome.gnome-browser-connector.enable = true;
-
   services.xserver.xkb = {
     layout = "tw";
     variant = "";
@@ -175,7 +173,7 @@
   };
 
   programs.niri.enable = true;
-  programs.firefox.enable = true;
+  programs.chromium.enable = true;
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;
