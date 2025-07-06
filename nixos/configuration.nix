@@ -72,14 +72,14 @@
   };
 
   i18n.inputMethod = {
-    enable = true;
-    type = "fcitx5";
-    fcitx5.addons = with pkgs; [
-      fcitx5-rime
-      fcitx5-anthy
-      catppuccin-fcitx5
-    ];
-    fcitx5.waylandFrontend = true;
+    #    enable = true;
+    #    type = "fcitx5";
+    #    fcitx5.addons = with pkgs; [
+    #      fcitx5-rime
+    #      fcitx5-anthy
+    #      catppuccin-fcitx5
+    #    ];
+    #    fcitx5.waylandFrontend = true;
   };
 
   fonts.packages = with pkgs; [
@@ -173,14 +173,14 @@
   ];
 
   environment.variables = {
-    DISPLAY = ":0";
+    #    DISPLAY = ":0";
     EDITOR = "nvim";
     SYSTEMD_EDITOR = "nvim";
     VISUAL = "nvim";
     GTK_IM_MODULE = "";
     QT_IM_MODULE = "";
     XMODIFIERS = "@im=fcitx";
-    ELECTRON_OZONE_PLATFORM_HINT = "auto";
+    #    ELECTRON_OZONE_PLATFORM_HINT = "auto";
   };
 
   system.stateVersion = "25.05"; # Did you read the comment?
