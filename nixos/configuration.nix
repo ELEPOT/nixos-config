@@ -185,14 +185,12 @@
   ];
 
   environment.variables = {
-    #    DISPLAY = ":0";
     EDITOR = "nvim";
     SYSTEMD_EDITOR = "nvim";
     VISUAL = "nvim";
     GTK_IM_MODULE = "";
     QT_IM_MODULE = "";
     XMODIFIERS = "@im=fcitx";
-    #    ELECTRON_OZONE_PLATFORM_HINT = "auto";
   };
 
   system.stateVersion = "25.05"; # Did you read the comment?
