@@ -33,6 +33,7 @@
     swayimg
     bottles
     krita
+    xorg.xeyes
 
     # desktop
     #    eww
