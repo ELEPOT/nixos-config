@@ -106,8 +106,19 @@
   services.xserver.enable = true;
   services.xserver.videoDrivers = ["nvidia"];
 
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
+  services.displayManager.gdm = {
+    enable = true;
+    wayland = true;
+  };
+
+  services.desktopManager.gnome = {
+    enable = true;
+    extraGSettingsOverridePackages = [pkgs.mutter];
+    extraGSettingsOverrides = ''
+      [org.gnome.mutter]
+      experimental-features=['scale-monitor-framebuffer']
+    '';
+  };
 
   services.xserver.xkb = {
     layout = "tw";
