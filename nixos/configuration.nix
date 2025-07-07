@@ -195,6 +195,7 @@
     SYSTEMD_EDITOR = "nvim";
     VISUAL = "nvim";
     ELECTRON_OZONE_PLATFORM_HINT = "";
+    COGL_ATLAS_DEFAULT_BLIT_MODE = "framebuffer";
   };
 
   system.stateVersion = "25.05"; # Did you read the comment?
