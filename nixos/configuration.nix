@@ -21,6 +21,7 @@
     libnotify
     alejandra # .nix formatter
     gnome-session
+    python3Minimal
 
     # tui
     neovim
