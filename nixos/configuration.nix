@@ -37,6 +37,7 @@
     krita
     xorg.xeyes
     chromium
+    lunar-client
 
     # desktop
     #    eww
