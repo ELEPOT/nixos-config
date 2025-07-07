@@ -20,6 +20,7 @@
     nmap
     libnotify
     alejandra # .nix formatter
+    gnome-session
 
     # tui
     neovim
