@@ -49,6 +49,7 @@
     #    kdePackages.xdg-desktop-portal-kde
     #    xsettingsd
     gnome-tweaks
+    adw-gtk3
   ];
 
   boot.loader.systemd-boot.enable = true;
