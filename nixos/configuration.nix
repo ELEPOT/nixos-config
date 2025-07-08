@@ -31,7 +31,7 @@
     obsidian
     (blender.override {cudaSupport = true;})
     alacritty # terminal
-    vesktop # discord client
+    discord # discord client
     swayimg
     bottles
     krita
