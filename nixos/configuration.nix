@@ -22,6 +22,7 @@
     alejandra # .nix formatter
     gnome-session
     python3Minimal
+    file
 
     # tui
     neovim
