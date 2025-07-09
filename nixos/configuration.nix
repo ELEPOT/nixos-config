@@ -28,7 +28,7 @@
     neovim
 
     # gui
-    inputs.zen-browser.packages.${system}.specific
+    inputs.zen-browser.packages.${system}.default
     obsidian
     (blender.override {cudaSupport = true;})
     alacritty # terminal

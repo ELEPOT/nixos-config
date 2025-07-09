@@ -50,16 +50,16 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1735563628,
-        "narHash": "sha256-OnSAY7XDSx7CtDoqNh8jwVwh4xNL/2HaJxGjryLWzX8=",
+        "lastModified": 1751792365,
+        "narHash": "sha256-J1kI6oAj25IG4EdVlg2hQz8NZTBNYvIS0l4wpr9KcUo=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "b134951a4c9f3c995fd7be05f3243f8ecd65d798",
+        "rev": "1fd8bada0b6117e6c7eb54aad5813023eed37ccb",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "ref": "nixos-24.05",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -117,15 +117,15 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1751680313,
-        "narHash": "sha256-ox/Y0h64yEQgwXCPZPUutcQqZwAS7Zy4wVhJLTur6fU=",
-        "owner": "FBIGlowie",
+        "lastModified": 1752025719,
+        "narHash": "sha256-bIWJl++0JZc+P34nSLWviPqLcYjTESsFgQ4rFEOgbXA=",
+        "owner": "DanMyers300",
         "repo": "zen-browser-flake",
-        "rev": "acea814c4b74dcc6c9e5dd5c0ba691454fe80ef7",
+        "rev": "e4023ff773ce87bf05e42e8c4716b9dfe98d6c02",
         "type": "github"
       },
       "original": {
-        "owner": "FBIGlowie",
+        "owner": "DanMyers300",
         "repo": "zen-browser-flake",
         "type": "github"
       }

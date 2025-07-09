@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    zen-browser.url = "github:FBIGlowie/zen-browser-flake";
+    zen-browser.url = "github:DanMyers300/zen-browser-flake";
     swww.url = "github:LGFae/swww";
 #    niri.url = "github:sodiboo/niri-flake";
   };
