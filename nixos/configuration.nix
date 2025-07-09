@@ -95,6 +95,7 @@
     fcitx5.addons = with pkgs; [
       fcitx5-chewing
       fcitx5-anthy
+      fcitx5-gtk
     ];
   };
 
