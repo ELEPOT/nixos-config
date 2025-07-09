@@ -39,6 +39,7 @@
     xorg.xeyes
     chromium
     lunar-client
+    anki-bin
 
     # desktop
     #    eww
