@@ -79,12 +79,21 @@
     LC_TIME = "zh_TW.UTF-8";
   };
 
+  #  i18n.inputMethod = {
+  #    enable = true;
+  #    type = "ibus";
+  #    ibus.engines = with pkgs.ibus-engines; [
+  #      chewing
+  #      anthy
+  #    ];
+  #  };
+
   i18n.inputMethod = {
     enable = true;
-    type = "ibus";
-    ibus.engines = with pkgs.ibus-engines; [
-      chewing
-      anthy
+    type = "fcitx5";
+    fcitx5.addons = with pkgs; [
+      fcitx5-chewing
+      fcitx5-anthy
     ];
   };
 
