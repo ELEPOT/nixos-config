@@ -41,7 +41,6 @@
     lunar-client
     prismlauncher
     anki-bin
-    bc
 
     # desktop
     #    eww
@@ -57,7 +56,6 @@
     #    xsettingsd
     gnome-tweaks
     adw-gtk3
-    xpra
   ];
 
   boot.loader.systemd-boot.enable = true;
