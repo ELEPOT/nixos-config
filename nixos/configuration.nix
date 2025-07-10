@@ -39,6 +39,7 @@
     xorg.xeyes
     chromium
     lunar-client
+    prismlauncher
     anki-bin
 
     # desktop
