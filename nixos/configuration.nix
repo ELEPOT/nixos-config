@@ -41,7 +41,6 @@
     lunar-client
     prismlauncher
     anki-bin
-    bc
 
     # desktop
     #    eww
@@ -57,7 +56,6 @@
     #    xsettingsd
     gnome-tweaks
     adw-gtk3
-    xpra
   ];
 
   boot.loader.systemd-boot.enable = true;
@@ -210,6 +208,9 @@
     EDITOR = "nvim";
     SYSTEMD_EDITOR = "nvim";
     VISUAL = "nvim";
+    GTK_IM_MODULE = "fcitx";
+    QT_IM_MODULE = "fcitx";
+    XMODIFIERS = "@im=fcitx";
     ELECTRON_OZONE_PLATFORM_HINT = "";
     COGL_ATLAS_DEFAULT_BLIT_MODE = "framebuffer";
   };
