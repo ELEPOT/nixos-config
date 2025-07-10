@@ -110,6 +110,8 @@
     noto-fonts-emoji
   ];
 
+  fonts.fontDir.enable = true;
+
   hardware.graphics.enable = true;
 
   hardware.nvidia = {
