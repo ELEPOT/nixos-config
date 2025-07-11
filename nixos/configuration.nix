@@ -24,6 +24,7 @@
     python3Minimal
     file
     zenity
+    unzip
 
     # tui
     neovim
