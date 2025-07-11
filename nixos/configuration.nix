@@ -23,6 +23,7 @@
     gnome-session
     python3Minimal
     file
+    zenity
 
     # tui
     neovim
@@ -59,6 +60,7 @@
     gnome-tweaks
     adw-gtk3
     xpra
+    xdg-desktop-portal
   ];
 
   boot.loader.systemd-boot.enable = true;
