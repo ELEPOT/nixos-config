@@ -25,7 +25,6 @@
     file
     zenity
     unzip
-    mumble
 
     # tui
     neovim
@@ -63,6 +62,8 @@
     adw-gtk3
     xpra
     xdg-desktop-portal
+    mumble
+    murmur
   ];
 
   boot.loader.systemd-boot.enable = true;
