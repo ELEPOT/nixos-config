@@ -25,6 +25,7 @@
     file
     zenity
     unzip
+    mumble
 
     # tui
     neovim
