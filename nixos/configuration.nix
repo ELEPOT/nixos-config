@@ -44,7 +44,6 @@
     prismlauncher
     anki-bin
     bc
-    onlyoffice-desktopeditors
 
     # desktop
     #    eww
