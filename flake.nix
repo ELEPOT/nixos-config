@@ -6,7 +6,7 @@
 
     zen-browser.url = "github:DanMyers300/zen-browser-flake";
     swww.url = "github:LGFae/swww";
-#    niri.url = "github:sodiboo/niri-flake";
+    erosanix.url = "github:emmanuelrosa/erosanix";
   };
 
   outputs = { self, nixpkgs, ... } @ inputs:
@@ -24,11 +24,6 @@
         system = "x86_64-linux";
         specialArgs = { inherit system inputs; };
         modules = [
-#          {
-#            nixpkgs.overlays = [
-#              inputs.niri.overlays.niri
-#            ];
-#          }
           ./nixos/configuration.nix
         ];
       };
