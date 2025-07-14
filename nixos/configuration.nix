@@ -124,7 +124,7 @@
                 <string>zh</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoFonts</string>
+                <string>NotoSans</string>
             </edit>
         </match>
       '';
