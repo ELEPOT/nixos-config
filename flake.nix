@@ -25,6 +25,7 @@
         specialArgs = { inherit system inputs; };
         modules = [
           ./nixos/configuration.nix
+          inputs.erosanix.nixosModules.onlyoffice
         ];
       };
     }; 
