@@ -207,14 +207,11 @@
     dedicatedServer.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
   };
-  programs.onlyoffice = {
-    enable = true;
-    package = pkgs.onlyoffice-desktopeditors;
-  };
 
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
+    onlyoffice-desktopeditors
   ];
 
   environment.variables = {
