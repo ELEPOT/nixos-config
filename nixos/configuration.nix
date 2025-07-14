@@ -108,13 +108,43 @@
     ];
   };
 
-  fonts.packages = with pkgs; [
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
-  ];
+  fonts = {
+    packages = with pkgs; [
+      noto-fonts
+      noto-fonts-cjk-sans
+      noto-fonts-emoji
+    ];
 
-  fonts.fontDir.enable = true;
+    fontDir.enable = true;
+
+    fontconfig = {
+      localConf = ''
+        <match target="pattern">
+            <test name="lang" compare="contains">
+                <string>zh</string>
+            </test>
+            <test qual="any" name="family">
+                <string>sans-serif</string>
+            </test>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>NotoSansTC</string>
+            </edit>
+        </match>
+
+        <match target="pattern">
+            <test name="lang" compare="contains">
+                <string>zh</string>
+            </test>
+            <test qual="any" name="family">
+                <string>serif</string>
+            </test>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>NotoSansTC</string>
+            </edit>
+        </match>
+      '';
+    };
+  };
 
   hardware.graphics.enable = true;
 
