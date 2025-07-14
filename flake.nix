@@ -6,7 +6,6 @@
 
     zen-browser.url = "github:DanMyers300/zen-browser-flake";
     swww.url = "github:LGFae/swww";
-    erosanix.url = "github:emmanuelrosa/erosanix";
   };
 
   outputs = { self, nixpkgs, ... } @ inputs:
@@ -25,7 +24,6 @@
         specialArgs = { inherit system inputs; };
         modules = [
           ./nixos/configuration.nix
-          inputs.erosanix.nixosModules.onlyoffice
         ];
       };
     }; 
