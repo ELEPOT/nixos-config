@@ -44,7 +44,6 @@
     prismlauncher
     anki-bin
     bc
-    onlyoffice-desktopeditors
 
     # desktop
     #    eww
@@ -208,7 +207,10 @@
     dedicatedServer.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
   };
-  programs.onlyoffice.enable = true;
+  programs.onlyoffice = {
+    enable = true;
+    package = pkgs.onlyoffice-desktopeditors;
+  };
 
   nixpkgs.config.allowUnfree = true;
 
