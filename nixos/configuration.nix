@@ -127,7 +127,7 @@
                 <string>sans-serif</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
-                <string>FreeSans</string>
+                <string>NotoFonts</string>
             </edit>
         </match>
 
@@ -139,7 +139,7 @@
                 <string>serif</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
-                <string>FreeSans</string>
+                <string>NotoFonts</string>
             </edit>
         </match>
       '';
