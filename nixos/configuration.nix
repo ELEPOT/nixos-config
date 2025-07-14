@@ -130,7 +130,7 @@
                 <string>sans-serif</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSans</string>
+                <string>NotoCJKSans</string>
             </edit>
           </match>
           <match target="pattern">
@@ -141,7 +141,7 @@
                 <string>serif</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSans</string>
+                <string>NotoCJKSans</string>
             </edit>
           </match>
         </fontconfig>
