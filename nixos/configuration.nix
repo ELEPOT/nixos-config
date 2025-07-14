@@ -121,25 +121,25 @@
       localConf = ''
         <match target="pattern">
             <test name="lang" compare="contains">
-                <string>zh</string>
+                <string>en</string>
             </test>
             <test qual="any" name="family">
                 <string>sans-serif</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSans</string>
+                <string>FreeSans</string>
             </edit>
         </match>
 
         <match target="pattern">
             <test name="lang" compare="contains">
-                <string>zh</string>
+                <string>en</string>
             </test>
             <test qual="any" name="family">
                 <string>serif</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSans</string>
+                <string>FreeSans</string>
             </edit>
         </match>
       '';
