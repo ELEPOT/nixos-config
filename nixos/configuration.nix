@@ -208,6 +208,7 @@
     dedicatedServer.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
   };
+  programs.onlyoffice.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
