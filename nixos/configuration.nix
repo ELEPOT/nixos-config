@@ -129,8 +129,6 @@
           <edit name="family" mode="prepend" binding="strong">
               <string>NotoSans</string>
           </edit>
-        </match>
-
         <match target="pattern">
           <test name="lang" compare="contains">
               <string>zh</string>
