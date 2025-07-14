@@ -119,27 +119,32 @@
 
     fontconfig = {
       localConf = ''
-        <match target="pattern">
-          <test name="lang" compare="contains">
-              <string>zh</string>
-          </test>
-          <test qual="any" name="family">
-              <string>sans-serif</string>
-          </test>
-          <edit name="family" mode="prepend" binding="strong">
-              <string>NotoSans</string>
-          </edit>
-        <match target="pattern">
-          <test name="lang" compare="contains">
-              <string>zh</string>
-          </test>
-          <test qual="any" name="family">
-              <string>serif</string>
-          </test>
-          <edit name="family" mode="prepend" binding="strong">
-              <string>NotoSans</string>
-          </edit>
-        </match>
+        <?xml version="1.0"?>
+        <!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
+        <fontconfig>
+          <match target="pattern">
+            <test name="lang" compare="contains">
+                <string>zh</string>
+            </test>
+            <test qual="any" name="family">
+                <string>sans-serif</string>
+            </test>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>NotoSans</string>
+            </edit>
+          </match>
+          <match target="pattern">
+            <test name="lang" compare="contains">
+                <string>zh</string>
+            </test>
+            <test qual="any" name="family">
+                <string>serif</string>
+            </test>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>NotoSans</string>
+            </edit>
+          </match>
+        </fontconfig>
       '';
     };
   };
