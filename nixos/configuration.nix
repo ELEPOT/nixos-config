@@ -25,6 +25,7 @@
     file
     zenity
     unzip
+    murmur
 
     # tui
     neovim
@@ -44,6 +45,7 @@
     prismlauncher
     anki-bin
     bc
+    mumble
 
     # desktop
     #    eww
@@ -61,8 +63,9 @@
     adw-gtk3
     xpra
     xdg-desktop-portal
-    mumble
-    murmur
+
+    # drivers
+    xf86_input_wacom
   ];
 
   boot.loader.systemd-boot.enable = true;
