@@ -65,7 +65,7 @@
     xdg-desktop-portal
 
     # drivers
-    libinput
+    opentabletdriver
   ];
 
   boot.loader.systemd-boot.enable = true;
