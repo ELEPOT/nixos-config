@@ -65,7 +65,7 @@
     xdg-desktop-portal
 
     # drivers
-    xf86_input_wacom
+    libinput
   ];
 
   boot.loader.systemd-boot.enable = true;
