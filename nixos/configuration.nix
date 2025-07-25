@@ -46,6 +46,7 @@
     anki-bin
     bc
     mumble
+    appeditor
 
     # desktop
     #    eww
