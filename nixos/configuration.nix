@@ -63,9 +63,6 @@
     adw-gtk3
     xpra
     xdg-desktop-portal
-
-    # drivers
-    opentabletdriver
   ];
 
   boot.loader.systemd-boot.enable = true;
@@ -176,6 +173,8 @@
     enable = true;
     powerOnBoot = true;
   };
+
+  hardware.opentabletdriver.enable = true;
 
   services.xserver.enable = true;
   services.xserver.videoDrivers = ["nvidia"];
