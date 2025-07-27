@@ -141,10 +141,10 @@
           </match>
           <match target="pattern">
             <test qual="any" name="family">
-              <string>mono</string>
+              <string>monospace</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
-                <string>JetBrainsMonoNLNerdFontMono</string>
+                <string>JetBrainsMonoNLNFM</string>
             </edit>
           </match>
         </fontconfig>
