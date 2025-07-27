@@ -129,7 +129,7 @@
             <test qual="any" name="family">
               <string>mono</string>
             </test>
-            <edit name="family" mode="prepend-first" binding="strong">
+            <edit name="family" mode="prepend_first" binding="strong">
                 <string>FreeMono</string>
             </edit>
           </match>
