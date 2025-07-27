@@ -144,7 +144,7 @@
               <string>mono</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
-                <string>JetBrainsMonoNL</string>
+                <string>JetBrainsMonoNLNerdFontMono</string>
             </edit>
           </match>
         </fontconfig>
