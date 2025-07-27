@@ -48,6 +48,7 @@
     bc
     mumble
     appeditor
+    mpv-unwrapped
 
     # desktop
     #    eww
