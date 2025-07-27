@@ -126,6 +126,14 @@
         <!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
         <fontconfig>
           <match target="pattern">
+            <test qual="any" name="family">
+              <string>monospace</string>
+            </test>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>JetBrainsMonoNLNFM</string>
+            </edit>
+          </match>
+          <match target="pattern">
             <edit name="family" mode="prepend" binding="strong">
                 <string>NotoSansCJKTC</string>
             </edit>
@@ -137,14 +145,6 @@
             </edit>
             <edit name="family" mode="prepend" binding="strong">
                 <string>NotoSansCJKKR</string>
-            </edit>
-          </match>
-          <match target="pattern">
-            <test qual="any" name="family">
-              <string>monospace</string>
-            </test>
-            <edit name="family" mode="prepend" binding="strong">
-                <string>JetBrainsMonoNLNFM</string>
             </edit>
           </match>
         </fontconfig>
