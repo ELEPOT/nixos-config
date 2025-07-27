@@ -127,6 +127,20 @@
             <edit name="family" mode="prepend" binding="strong">
                 <string>NotoSansTC</string>
             </edit>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>NotoSansJP</string>
+            </edit>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>NotoSansSC</string>
+            </edit>
+          </match>
+          <match target="pattern">
+            <test qual="any" name="family">
+              <string>monospace</string>
+            </test>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>JetBrainsMono</string>
+            </edit>
           </match>
         </fontconfig>
       '';
