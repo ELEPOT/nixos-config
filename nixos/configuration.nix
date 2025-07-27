@@ -126,7 +126,7 @@
         <!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
         <fontconfig>
           <match target="pattern">
-            <test qual="any" name="family">
+            <test qual="any" name="family" compare="not_contains">
               <string>mono</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
