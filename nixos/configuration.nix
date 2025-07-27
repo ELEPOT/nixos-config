@@ -127,10 +127,10 @@
         <fontconfig>
           <match target="pattern">
             <test qual="any" name="family">
-              <string>monospace</string>
+              <string>mono</string>
             </test>
             <edit name="family" mode="prepend-first" binding="strong">
-                <string>JetBrainsMonoNLNFM</string>
+                <string>JetBrainsMonoNLNerdFontMono</string>
             </edit>
           </match>
           <match target="pattern">
