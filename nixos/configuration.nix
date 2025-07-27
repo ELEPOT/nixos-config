@@ -125,9 +125,6 @@
         <fontconfig>
           <match target="pattern">
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansTC</string>
-            </edit>
-            <edit name="family" mode="prepend" binding="strong">
                 <string>NotoSansJP</string>
             </edit>
             <edit name="family" mode="prepend" binding="strong">
