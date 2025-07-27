@@ -142,6 +142,26 @@
                 <string>NotoSansCJKKR</string>
             </edit>
           </match>
+          <match target="pattern">
+            <test qual="any" name="family" compare="contains">
+              <string>mono</string>
+            </test>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>JetBrainsMonoNLNerdFontMono</string>
+            </edit>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>NotoSansCJKTC</string>
+            </edit>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>NotoSansCJKJP</string>
+            </edit>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>NotoSansCJKSC</string>
+            </edit>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>NotoSansCJKKR</string>
+            </edit>
+          </match>
         </fontconfig>
       '';
     };
