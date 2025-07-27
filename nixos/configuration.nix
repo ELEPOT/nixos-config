@@ -115,6 +115,7 @@
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-emoji
+      nerd-fonts.jetbrains-mono
     ];
 
     fontDir.enable = true;
@@ -126,13 +127,16 @@
         <fontconfig>
           <match target="pattern">
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansTC</string>
+                <string>NotoSansCJKTC</string>
             </edit>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansJP</string>
+                <string>NotoSansCJKJP</string>
             </edit>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansSC</string>
+                <string>NotoSansCJKSC</string>
+            </edit>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>NotoSansCJKKR</string>
             </edit>
           </match>
           <match target="pattern">
