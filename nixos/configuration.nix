@@ -130,7 +130,7 @@
               <string>mono</string>
             </test>
             <edit name="family" mode="prepend-first" binding="strong">
-                <string>JetBrainsMonoNLNerdFontMono</string>
+                <string>FreeMono</string>
             </edit>
           </match>
           <match target="pattern">
