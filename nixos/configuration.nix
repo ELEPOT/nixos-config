@@ -126,14 +126,9 @@
         <!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
         <fontconfig>
           <match target="pattern">
-            <test qual="any" name="family">
+            <test qual="any" name="family" compare="not_eq">
               <string>mono</string>
             </test>
-            <edit name="family" mode="prepend_first" binding="strong">
-                <string>FreeMono</string>
-            </edit>
-          </match>
-          <match target="pattern">
             <edit name="family" mode="prepend" binding="strong">
                 <string>NotoSansCJKTC</string>
             </edit>
