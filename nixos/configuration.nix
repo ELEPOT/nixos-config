@@ -27,7 +27,7 @@
     unzip
     murmur
     fontconfig
-    libguestfs
+    libguestfs-with-appliance
 
     # tui
     neovim
