@@ -32,6 +32,11 @@
     fsType = "ext4";
   };
 
+  fileSystems."/media/hdd1" = {
+    device = "/dev/disk/by-uuid/30e63d2d-431b-4e1c-bf40-9b6ac031822e";
+    fsType = "ext4";
+  };
+
   fileSystems."/boot" = {
     device = "/dev/disk/by-partlabel/EFI";
     fsType = "vfat";
