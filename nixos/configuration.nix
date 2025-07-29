@@ -35,7 +35,7 @@
     # gui
     inputs.zen-browser.packages.${system}.default
     obsidian
-    (blender.override {cudaSupport = true;})
+    (blender-hip.override {cudaSupport = true;})
     alacritty # terminal
     vesktop # discord client
     swayimg
