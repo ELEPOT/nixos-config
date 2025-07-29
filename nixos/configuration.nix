@@ -27,7 +27,7 @@
     unzip
     murmur
     fontconfig
-    libguestfs-with-appliance
+    libguestfs-with-appliance # mount vhdx
 
     # tui
     neovim
@@ -50,6 +50,7 @@
     mumble
     appeditor
     mpv-unwrapped
+    godot
 
     # desktop
     #    eww
