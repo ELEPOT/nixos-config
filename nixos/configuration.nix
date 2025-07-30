@@ -28,6 +28,7 @@
     murmur
     fontconfig
     libguestfs-with-appliance # mount vhdx
+    libinput
 
     # tui
     neovim
