@@ -28,8 +28,7 @@
     murmur
     fontconfig
     libguestfs-with-appliance # mount vhdx
-    libinput
-    libwacom
+    opentabletdriver
 
     # tui
     neovim
