@@ -184,8 +184,6 @@
     powerOnBoot = true;
   };
 
-  hardware.opentabletdriver.enable = true;
-
   services.xserver.enable = true;
   services.xserver.videoDrivers = ["nvidia"];
 
