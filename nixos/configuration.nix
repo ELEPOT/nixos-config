@@ -238,6 +238,13 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+    extraConfig = {
+      pipewire = {
+        "clock" = {
+          "default.clock.min-quantum" = 1024;
+        };
+      };
+    };
   };
 
   systemd.services.keymapperd = {
