@@ -28,7 +28,6 @@
     murmur
     fontconfig
     libguestfs-with-appliance # mount vhdx
-    opentabletdriver
 
     # tui
     neovim
@@ -184,6 +183,8 @@
     enable = true;
     powerOnBoot = true;
   };
+
+  hardware.opentabletdriver.enable = true;
 
   services.xserver.enable = true;
   services.xserver.videoDrivers = ["nvidia"];
