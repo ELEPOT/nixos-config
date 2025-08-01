@@ -52,6 +52,7 @@
     mpv-unwrapped
     godot
     aseprite
+    obs-studio
 
     # desktop
     #    eww
