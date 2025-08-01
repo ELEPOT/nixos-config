@@ -51,6 +51,7 @@
     appeditor
     mpv-unwrapped
     godot
+    aseprite
 
     # desktop
     #    eww
