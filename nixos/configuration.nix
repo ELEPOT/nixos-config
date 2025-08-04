@@ -244,7 +244,9 @@
     extraConfig = {
       pipewire = {
         "clock" = {
-          "default.clock.min-quantum" = 1024;
+          default.clock.rate = 48000;
+          default.clock.allowed-rates = [44100 48000 96000];
+          default.clock.min-quantum = 16;
         };
       };
     };
