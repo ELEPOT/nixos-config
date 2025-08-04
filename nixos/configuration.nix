@@ -291,7 +291,7 @@
     XMODIFIERS = "@im=fcitx";
     ELECTRON_OZONE_PLATFORM_HINT = "";
     COGL_ATLAS_DEFAULT_BLIT_MODE = "framebuffer";
-    XCURSOR_SIZE = 96;
+    XCURSOR_SIZE = null;
   };
 
   system.stateVersion = "25.05"; # Did you read the comment?
