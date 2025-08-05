@@ -30,6 +30,7 @@
     libguestfs-with-appliance # mount vhdx
     ffmpeg
     nodejs_24
+    glib
 
     # tui
     neovim
