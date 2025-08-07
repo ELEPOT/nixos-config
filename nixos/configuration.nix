@@ -286,7 +286,7 @@
   users.users.elepot = {
     isNormalUser = true;
     description = "ELEPOT";
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = ["networkmanager" "wheel" "dialout"];
   };
 
   programs.nix-ld.enable = true;
