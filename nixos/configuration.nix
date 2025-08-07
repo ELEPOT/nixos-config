@@ -33,6 +33,7 @@
     # code
     nodejs_24
     platformio-core
+    avrdude
 
     # tui
     neovim
@@ -267,6 +268,11 @@
       };
     };
   };
+
+  services.udev.packages = with pkgs; [
+    platformio-core
+    openocd
+  ];
 
   systemd.services.keymapperd = {
     enable = true;
