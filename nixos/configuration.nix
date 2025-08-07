@@ -34,6 +34,7 @@
     nodejs_24
     platformio-core
     avrdude
+    pkgsCross.avr.buildPackages.gcc
 
     # tui
     neovim
