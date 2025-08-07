@@ -170,6 +170,13 @@
                 <string>NotoSansCJKKR</string>
             </edit>
           </match>
+          <match target="pattern">
+            <test qual="any" name="weight">
+              <const>thin</const>
+            </test>
+            <edit name="weight" mode="assign" binding="strong">
+              <const>regular</const>
+            </edit>
         </fontconfig>
       '';
     };
