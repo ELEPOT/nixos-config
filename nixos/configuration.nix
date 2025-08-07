@@ -140,7 +140,7 @@
               <string>mono</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansCJKTC</string>
+                <string>NotoSansTC</string>
             </edit>
             <edit name="family" mode="prepend" binding="strong">
                 <string>NotoSansCJKJP</string>
@@ -160,7 +160,7 @@
                 <string>JetBrainsMonoNLNerdFontMono</string>
             </edit>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansCJKTC</string>
+                <string>NotoSansTC</string>
             </edit>
             <edit name="family" mode="prepend" binding="strong">
                 <string>NotoSansCJKJP</string>
