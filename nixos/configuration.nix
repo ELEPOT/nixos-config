@@ -177,6 +177,7 @@
             <edit name="weight" mode="assign" binding="strong">
               <const>regular</const>
             </edit>
+          </match>
         </fontconfig>
       '';
     };
