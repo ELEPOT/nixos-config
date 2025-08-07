@@ -29,7 +29,10 @@
     fontconfig
     libguestfs-with-appliance # mount vhdx
     ffmpeg
+
+    # code
     nodejs_24
+    platformio-core
 
     # tui
     neovim
