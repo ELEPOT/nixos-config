@@ -143,13 +143,13 @@
                 <string>NotoSansTC</string>
             </edit>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansCJKJP</string>
+                <string>NotoSansJP</string>
             </edit>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansCJKSC</string>
+                <string>NotoSansSC</string>
             </edit>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansCJKKR</string>
+                <string>NotoSansKR</string>
             </edit>
           </match>
           <match target="pattern">
@@ -163,13 +163,13 @@
                 <string>NotoSansTC</string>
             </edit>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansCJKJP</string>
+                <string>NotoSansJP</string>
             </edit>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansCJKSC</string>
+                <string>NotoSansSC</string>
             </edit>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansCJKKR</string>
+                <string>NotoSansKR</string>
             </edit>
           </match>
         </fontconfig>
