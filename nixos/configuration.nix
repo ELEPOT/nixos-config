@@ -275,6 +275,8 @@
     openocd
   ];
 
+  services.envfs.enable = true;
+
   systemd.services.keymapperd = {
     enable = true;
     wantedBy = ["multi-user.target"];
