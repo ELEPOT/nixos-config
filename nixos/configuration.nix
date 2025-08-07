@@ -271,6 +271,7 @@
 
   services.udev.packages = with pkgs; [
     platformio-core
+    platformio-core.udev
     openocd
   ];
 
