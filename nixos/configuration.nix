@@ -123,7 +123,7 @@
   fonts = {
     packages = with pkgs; [
       noto-fonts
-      # noto-fonts-cjk-sans removed for now because too thin and manually added in dir
+      noto-fonts-cjk-sans # removed for now because too thin and manually added in dir
       noto-fonts-emoji
       nerd-fonts.jetbrains-mono
     ];
