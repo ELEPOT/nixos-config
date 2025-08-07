@@ -55,7 +55,9 @@
     godot
     aseprite
     obs-studio
+
     jetbrains.rider
+    jetbrains.clion
 
     # desktop
     #    eww
