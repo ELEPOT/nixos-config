@@ -34,7 +34,6 @@
     nodejs_24
     platformio-core
     avrdude
-    pkgsCross.avr.buildPackages.gcc
 
     # tui
     neovim
@@ -289,6 +288,7 @@
     extraGroups = ["networkmanager" "wheel"];
   };
 
+  programs.nix-ld.enable = true;
   programs.niri.enable = true;
   programs.chromium.enable = true;
   programs.firefox.enable = true;
