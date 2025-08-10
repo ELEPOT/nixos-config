@@ -6,6 +6,8 @@
 }: {
   imports = [./hardware-configuration.nix];
 
+  nix.settings.experimental-features = ["nix-command" "flakes"];
+
   users.users.elepot.packages = with pkgs; [
     # cli tools
     htop
