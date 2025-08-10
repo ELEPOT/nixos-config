@@ -295,6 +295,7 @@
     dedicatedServer.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
   };
+  programs.direnv.enable = true;
   # programs.steam.enable = false;
 
   nixpkgs.config.allowUnfree = true;
