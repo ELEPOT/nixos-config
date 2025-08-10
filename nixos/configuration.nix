@@ -21,7 +21,6 @@
     libnotify
     alejandra # .nix formatter
     gnome-session
-    python3Minimal
     file
     zenity
     unzip
@@ -29,11 +28,6 @@
     fontconfig
     libguestfs-with-appliance # mount vhdx
     ffmpeg
-
-    # code
-    nodejs_24
-    platformio-core
-    avrdude
 
     # tui
     neovim
