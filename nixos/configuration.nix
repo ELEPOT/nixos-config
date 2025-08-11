@@ -55,6 +55,7 @@
     godot
     aseprite
     obs-studio
+    protonvpn-gui
 
     jetbrains.rider
     jetbrains.clion
