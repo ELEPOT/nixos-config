@@ -57,6 +57,7 @@
     aseprite
     obs-studio
     protonvpn-gui
+    audacity
 
     jetbrains.rider
     jetbrains.clion
