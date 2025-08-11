@@ -30,6 +30,7 @@
     fontconfig
     libguestfs-with-appliance # mount vhdx
     ffmpeg
+    yt-dlp
 
     # tui
     neovim
