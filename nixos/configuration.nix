@@ -58,6 +58,7 @@
     obs-studio
     protonvpn-gui
     audacity
+    ventoy-full
 
     jetbrains.rider
     jetbrains.clion
@@ -304,6 +305,9 @@
   # programs.steam.enable = false;
 
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.permittedInsecurePackages = [
+    "ventoy-1.1.05"
+  ];
 
   environment.systemPackages = with pkgs; [
     onlyoffice-desktopeditors
