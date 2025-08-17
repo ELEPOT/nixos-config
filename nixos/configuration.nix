@@ -62,6 +62,7 @@
 
     jetbrains.rider
     jetbrains.clion
+    jetbrains.pycharm-professional
 
     # desktop
     #    eww
