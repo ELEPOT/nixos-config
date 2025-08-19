@@ -65,17 +65,17 @@
     jetbrains.pycharm-professional
 
     # desktop
-    #    eww
+    eww
     wl-clipboard
-    #    labwc
-    #    xwayland-satellite
-    #    fuzzel # app launcher
+    labwc
+    xwayland-satellite
+    fuzzel # app launcher
     keymapper
-    #    dunst # notification handler
-    #    inputs.swww.packages.${system}.swww # bg manager
-    #    xdg-desktop-portal
-    #    kdePackages.xdg-desktop-portal-kde
-    #    xsettingsd
+    dunst # notification handler
+    inputs.swww.packages.${system}.swww # bg manager
+    xdg-desktop-portal
+    kdePackages.xdg-desktop-portal-kde
+    xsettingsd
     gnome-tweaks
     adw-gtk3
     xpra
