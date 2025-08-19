@@ -80,6 +80,7 @@
     adw-gtk3
     xpra
     xdg-desktop-portal
+    mutter
   ];
 
   boot.loader.systemd-boot.enable = true;
