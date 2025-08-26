@@ -88,6 +88,13 @@
         PageUp   >> $(sh -c "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-") ^
       '';
     };
+
+    "./.profile" = {
+      enable = true;
+      text = ''
+        keymapper
+      '';
+    };
   };
 
   home.sessionVariables = {
