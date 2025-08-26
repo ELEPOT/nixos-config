@@ -4,87 +4,16 @@
   inputs,
   ...
 }: {
-  imports = [./hardware-configuration.nix];
-
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
-  users.users.elepot.packages = with pkgs; [
-    # cli tools
-    htop
-    wev # keytester
-    wget
-    git
-    rsync # better cp
-    ntfs3g # ntfs disk fixer
-    progress
-    pamixer
-    toybox
-    nmap
-    libnotify
-    alejandra # .nix formatter
-    gnome-session
-    file
-    zenity
-    unzip
-    murmur
-    fontconfig
-    libguestfs-with-appliance # mount vhdx
-    ffmpeg
-    yt-dlp
-
-    # tui
-    neovim
-
-    # gui
-    inputs.zen-browser.packages.${system}.default
-    obsidian
-    (blender-hip.override {cudaSupport = true;})
-    alacritty # terminal
-    vesktop # discord client
-    swayimg
-    bottles
-    krita
-    xorg.xeyes
-    chromium
-    lunar-client
-    prismlauncher
-    anki-bin
-    bc
-    mumble
-    appeditor
-    mpv-unwrapped
-    godot
-    aseprite
-    obs-studio
-    protonvpn-gui
-    audacity
-    ventoy-full
-
-    jetbrains.rider
-    jetbrains.clion
-    jetbrains.pycharm-professional
-
-    # desktop
-    eww
-    wl-clipboard
-    labwc
-    xwayland-satellite
-    fuzzel # app launcher
-    keymapper
-    dunst # notification handler
-    inputs.swww.packages.${system}.swww # bg manager
-    xdg-desktop-portal
-    kdePackages.xdg-desktop-portal-kde
-    xsettingsd
-    gnome-tweaks
-    adw-gtk3
-    xpra
-    xdg-desktop-portal
-    mutter
-  ];
-
-  boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub = {
+    enable = true;
+    efiSupport = true;
+    device = "nodev";
+  };
+  boot.kernelParams = ["nouveau.config=NvGsoRm=1"];
+  boot.initrd.kernelModules = ["nvidia"];
 
   networking.hostName = "nixos";
 
@@ -106,30 +35,10 @@
     LC_TIME = "zh_TW.UTF-8";
   };
 
-  #  i18n.inputMethod = {
-  #    enable = true;
-  #    type = "ibus";
-  #    ibus.engines = with pkgs.ibus-engines; [
-  #      chewing
-  #      anthy
-  #    ];
-  #  };
-
-  i18n.inputMethod = {
-    enable = true;
-    type = "fcitx5";
-    fcitx5.waylandFrontend = true;
-    fcitx5.addons = with pkgs; [
-      fcitx5-chewing
-      fcitx5-anthy
-      fcitx5-gtk
-    ];
-  };
-
   fonts = {
     packages = with pkgs; [
       noto-fonts
-      # noto-fonts-cjk-sans # removed for now because too thin and manually added in dir
+      noto-fonts-cjk-sans
       noto-fonts-emoji
       nerd-fonts.jetbrains-mono
     ];
@@ -183,22 +92,18 @@
     };
   };
 
-  #        <match target="pattern">
-  #          <test qual="any" name="weight">
-  #            <const>thin</const>
-  #          </test>
-  #          <edit name="weight" mode="assign" binding="strong">
-  #            <const>regular</const>
-  #          </edit>
-  #        </match>
-
-  hardware.graphics.enable = true;
+  hardware.graphics = {
+    enable = true;
+    extraPackages = with pkgs; [
+      vpl-gpu-rt
+    ];
+  };
 
   hardware.nvidia = {
     modesetting.enable = true;
     open = true;
     nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    package = config.boot.kernelPackages.nvidiaPackages.beta;
   };
 
   hardware.bluetooth = {
@@ -279,6 +184,8 @@
 
   services.envfs.enable = true;
 
+  services.flatpak.enable = true;
+
   systemd.services.keymapperd = {
     enable = true;
     wantedBy = ["multi-user.target"];
@@ -293,6 +200,10 @@
     extraGroups = ["networkmanager" "wheel" "dialout"];
   };
 
+  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.permittedInsecurePackages = [
+  ];
+
   programs.nix-ld.enable = true;
   programs.niri.enable = true;
   programs.chromium.enable = true;
@@ -304,15 +215,11 @@
     localNetworkGameTransfers.openFirewall = true;
   };
   programs.direnv.enable = true;
-  # programs.steam.enable = false;
-
-  nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.permittedInsecurePackages = [
-    "ventoy-1.1.05"
-  ];
 
   environment.systemPackages = with pkgs; [
     onlyoffice-desktopeditors
+    git
+    vim
   ];
 
   environment.variables = {
@@ -324,6 +231,7 @@
     XMODIFIERS = "@im=fcitx";
     ELECTRON_OZONE_PLATFORM_HINT = "";
     COGL_ATLAS_DEFAULT_BLIT_MODE = "framebuffer";
+    GSK_RENDERER = "ngl";
   };
 
   system.stateVersion = "25.05"; # Did you read the comment?
