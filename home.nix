@@ -70,6 +70,7 @@
 
     # gnome extensions
     gnomeExtensions.kimpanel
+    gnomeExtensions.workspaces-indicator-by-open-apps
   ];
 
   home.file = {
@@ -80,7 +81,6 @@
         Alt{Space{Shift{Any}}} >> Alt{Shift{Any}}
         Control{Alt{Space{Any}}} >> Control{Alt{Any}}
         Control{Shift{Alt{Space{Any}}}} >> Control{Shift{Alt{Any}}}
-        Alt{Space} >> Alt
 
         Alt >> Meta
 
@@ -92,7 +92,7 @@
     "./.profile" = {
       enable = true;
       text = ''
-        keymapper
+        keymapper &
       '';
     };
   };
@@ -107,6 +107,7 @@
         disable-user-extensions = false;
         enabled-extensions = with pkgs.gnomeExtensions; [
           kimpanel.extensionUuid
+          workspaces-indicator-by-open-apps.extensionUuid
         ];
       };
 
