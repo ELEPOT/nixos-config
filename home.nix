@@ -98,7 +98,7 @@
 
     "./.local/share/gnome-shell/extensions/switch-keyboard-layout@maksmartyn" = {
       enable = true;
-      source = config.lib.file.mkOutOfStoreSymlink ./switch-keyboard-layout;
+      source = config.lib.file.mkOutOfStoreSymlink ./gnome-switch-keyboard-layout;
     };
   };
 
