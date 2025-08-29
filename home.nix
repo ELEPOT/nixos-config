@@ -95,9 +95,11 @@
       '';
     };
 
-    "./.local/share/gnome-shell/extensions/switch-keyboard-layout@maksmartyn" = {
-      source = "${self}/gnome-switch-keyboard-layout";
-      recursive = true;
+    "./.local/share/gnome-shell/extensions/switch-keyboard-layout@maksmartyn/extension.js" = {
+      source = "${self}/gnome-switch-keyboard-layout/extension.js";
+    };
+    "./.local/share/gnome-shell/extensions/switch-keyboard-layout@maksmartyn/metadata.json" = {
+      source = "${self}/gnome-switch-keyboard-layout/metadata.json";
     };
   };
 
