@@ -36,10 +36,10 @@
 'use strict';
 
 const ExtensionUtils = imports.misc.extensionUtils;
-const Me = ExtensionUtils.getCurrentExtension();
-
 const { Gio, Meta, Shell } = imports.gi;
 const { getInputSourceManager } = imports.ui.status.keyboard;
+
+const Me = ExtensionUtils.getCurrentExtension();
 
 const MR_DBUS_IFACE = `
 <node>
