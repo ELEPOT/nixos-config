@@ -35,9 +35,11 @@
 
 'use strict';
 
-const ExtensionUtils = imports.misc.extensionUtils;
-const { Gio, Meta, Shell } = imports.gi;
-const { getInputSourceManager } = imports.ui.status.keyboard;
+import ExtensionUtils from 'resource://org/gnome/shell/misc/extensionUtils.js';
+import Gio from 'gi://Gi';
+import Meta from 'gi://Meta';
+import Shell from 'gi://Shell';
+import * from 'resource://org/gnome/shell/ui/status/keyboard.js';
 
 const Me = ExtensionUtils.getCurrentExtension();
 

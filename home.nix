@@ -93,13 +93,6 @@
         keymapper &
       '';
     };
-
-    "./.local/share/gnome-shell/extensions/switch-keyboard-layout@maksmartyn/extension.js" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/home/elepot/mysystem/gnome-switch-keyboard-layout/extension.js";
-    };
-    "./.local/share/gnome-shell/extensions/switch-keyboard-layout@maksmartyn/metadata.json" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/home/elepot/mysystem/gnome-switch-keyboard-layout/metadata.json";
-    };
   };
 
   home.sessionVariables = {
@@ -113,7 +106,6 @@
         enabled-extensions = with pkgs.gnomeExtensions; [
           kimpanel.extensionUuid
           workspaces-indicator-by-open-apps.extensionUuid
-          "switch-keyboard-layout@maksmartyn"
         ];
       };
 
