@@ -98,7 +98,7 @@
       source = config.lib.file.mkOutOfStoreSymlink "${inputs.self}/gnome-switch-keyboard-layout/extension.js";
     };
     "./.local/share/gnome-shell/extensions/switch-keyboard-layout@maksmartyn/metadata.json" = {
-      source = config.lib.file.mkOutOfStoreSymlink "${inputs.self}/mysystem/gnome-switch-keyboard-layout/metadata.json";
+      source = config.lib.file.mkOutOfStoreSymlink "${inputs.self}/gnome-switch-keyboard-layout/metadata.json";
     };
   };
 
