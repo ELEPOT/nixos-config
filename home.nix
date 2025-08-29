@@ -113,6 +113,7 @@
         enabled-extensions = with pkgs.gnomeExtensions; [
           kimpanel.extensionUuid
           workspaces-indicator-by-open-apps.extensionUuid
+          "switch-keyboard-layout@maksmartyn"
         ];
       };
 
