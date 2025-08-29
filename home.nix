@@ -2,6 +2,7 @@
   config,
   pkgs,
   inputs,
+  self,
   ...
 }: {
   home.username = "elepot";
@@ -75,7 +76,6 @@
 
   home.file = {
     "./.config/keymapper.conf" = {
-      enable = true;
       text = ''
         Alt{Space{Any}} >> Alt{Any}
         Alt{Space{Shift{Any}}} >> Alt{Shift{Any}}
@@ -90,15 +90,14 @@
     };
 
     "./.profile" = {
-      enable = true;
       text = ''
         keymapper &
       '';
     };
 
     "./.local/share/gnome-shell/extensions/switch-keyboard-layout@maksmartyn" = {
-      enable = true;
-      source = config.lib.file.mkOutOfStoreSymlink ./gnome-switch-keyboard-layout;
+      source = "${self}/gnome-switch-keyboard-layout";
+      recursive = true;
     };
   };
 

@@ -27,7 +27,7 @@
   in {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       inherit system;
-      specialArgs = {inherit system inputs;};
+      specialArgs = {inherit system inputs self;};
       modules = [
         ./nixos/configuration.nix
         ./nixos/hardware-configuration.nix
@@ -38,7 +38,7 @@
       elepot = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [./home.nix];
-        extraSpecialArgs = {inherit inputs;};
+        extraSpecialArgs = {inherit inputs self;};
       };
     };
   };
