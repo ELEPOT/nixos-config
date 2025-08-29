@@ -76,21 +76,21 @@
   home.file = {
     "./.config/keymapper.conf" = {
       text = ''
-        #  Alt{Space{Any}} >> Alt{Any}
-        #  Alt{Space{Shift{Any}}} >> Alt{Shift{Any}}
-        #  Control{Alt{Space{Any}}} >> Control{Alt{Any}}
-        #  Control{Shift{Alt{Space{Any}}}} >> Control{Shift{Alt{Any}}}
+        Alt{Space{Any}} >> Alt{Any}
+        Alt{Space{Shift{Any}}} >> Alt{Shift{Any}}
+        Control{Alt{Space{Any}}} >> Control{Alt{Any}}
+        Control{Shift{Alt{Space{Any}}}} >> Control{Shift{Alt{Any}}}
 
-          Alt >> Meta
+        Alt >> Meta
 
-          PageDown >> $(sh -c "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+") ^
-          PageUp   >> $(sh -c "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-") ^
+        PageDown >> $(sh -c "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+") ^
+        PageUp   >> $(sh -c "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-") ^
       '';
     };
 
     "./.profile" = {
       text = ''
-        keymapper &
+        keymapper -u &
       '';
     };
   };
