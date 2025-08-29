@@ -38,7 +38,7 @@
       elepot = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [./home.nix];
-        extraSpecialArgs = {inherit inputs self;};
+        extraSpecialArgs = {inherit inputs;};
       };
     };
   };
