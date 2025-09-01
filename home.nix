@@ -83,9 +83,6 @@
         Control{Alt{Space{Any}}} >> Control{Alt{Any}}
         Control{Shift{Alt{Space{Any}}}} >> Control{Shift{Alt{Any}}}
 
-        Alt{Space} >> Alt{Space}
-        Alt{Shift{Space} >> Alt{Shift{Space}}
-
         Alt >> Meta
 
         PageDown >> $(sh -c "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+") ^
@@ -94,6 +91,9 @@
         [stage]
 
         Meta !Meta >> Meta{Tab{E}}
+
+        Meta{Space} >> F13
+        Meta{Shift{Space} >> F14
       '';
     };
 
