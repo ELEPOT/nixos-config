@@ -125,6 +125,7 @@
 
       "org/gnome/desktop/wm/keybindings".switch-input-source = [];
       "org/gnome/desktop/wm/keybindings".switch-input-source-backward = [];
+      "org/gnome/desktop/wm/keybindings".activate-window-menu = [];
 
       "org/gnome/desktop/interface".enable-hot-corners = false;
 
@@ -174,7 +175,7 @@
         "Hotkey/TriggerKeys" = {};
         "Hotkey/AltTriggerKeys"."0" = "Shift+Shift_L";
         "Hotkey/EnumerateForwardKeys"."0" = "Alt+space";
-        "Hotkey/EnumerateBackwardKeys"."0" = "Alt+Shift_L+space";
+        "Hotkey/EnumerateBackwardKeys"."0" = "Alt+Shift+space";
       };
     };
   };
