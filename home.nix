@@ -90,8 +90,7 @@
 
         [stage]
 
-        Meta{Any} >> Meta{Any}
-        Meta >> Meta{Tab} E
+        ? Meta >> Meta{Tab} E
       '';
     };
 
