@@ -71,6 +71,8 @@
     # gnome extensions
     gnomeExtensions.kimpanel
     gnomeExtensions.workspaces-indicator-by-open-apps
+    gnomeExtensions.advanced-alttab-window-switcher
+    gnomeExtensions.paperwm
   ];
 
   home.file = {
@@ -106,6 +108,8 @@
         enabled-extensions = with pkgs.gnomeExtensions; [
           kimpanel.extensionUuid
           workspaces-indicator-by-open-apps.extensionUuid
+          advanced-alttab-window-switcher.extensionUuid
+          paperwm.extensionUuid
         ];
       };
 
@@ -113,6 +117,10 @@
 
       "org/gnome/desktop/wm/keybindings".switch-input-source = [];
       "org/gnome/desktop/wm/keybindings".switch-input-source-backward = [];
+
+      "org/gnome/desktop/interface".enable-hot-corners = false;
+
+      "org/gnome/shell/extensions/advanced-alt-tab-window-switcher".switcher-popup-start-search = false;
     };
   };
 
