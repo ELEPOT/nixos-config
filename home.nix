@@ -93,7 +93,7 @@
         Meta !Meta >> Meta{Tab{E}}
 
         Meta{Space} >> F13
-        Meta{Shift{Space} >> F14
+        Meta{Shift{Space}} >> F14
       '';
     };
 
