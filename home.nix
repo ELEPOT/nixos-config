@@ -90,7 +90,8 @@
 
         [stage]
 
-        ? Meta >> Meta{Tab} E
+        Meta{Any} >> Meta{Any}
+        Meta >> Meta{Tab} 100ms E
       '';
     };
 
