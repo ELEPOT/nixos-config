@@ -83,6 +83,9 @@
         Control{Alt{Space{Any}}} >> Control{Alt{Any}}
         Control{Shift{Alt{Space{Any}}}} >> Control{Shift{Alt{Any}}}
 
+        Alt{Space} >> Alt{Space}
+        Alt{Shift{Space}} >> Alt{Shift{Space}}
+
         Alt >> Meta
 
         PageDown >> $(sh -c "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+") ^
@@ -92,8 +95,6 @@
 
         Meta !Meta >> Meta{Tab{E}}
 
-        Meta{Space} >> F13
-        Meta{Shift{Space}} >> F14
       '';
     };
 
@@ -172,8 +173,8 @@
 
         "Hotkey/TriggerKeys" = {};
         "Hotkey/AltTriggerKeys"."0" = "Shift+Shift_L";
-        "Hotkey/EnumerateForwardKeys"."0" = "F13";
-        "Hotkey/EnumerateBackwardKeys"."0" = "F14";
+        "Hotkey/EnumerateForwardKeys"."0" = "Alt+Space";
+        "Hotkey/EnumerateBackwardKeys"."0" = "Alt+Shift_L+Space";
       };
     };
   };
