@@ -91,6 +91,9 @@
         [stage]
 
         Meta !Meta >> Meta{Tab{E}}
+
+        Meta{Space} >> F13
+        Meta{Shift{Space}} >> F14
       '';
     };
 
@@ -169,8 +172,8 @@
 
         "Hotkey/TriggerKeys" = {};
         "Hotkey/AltTriggerKeys"."0" = "Shift+Shift_L";
-        "Hotkey/EnumerateForwardKeys"."0" = "Super+space";
-        "Hotkey/EnumerateBackwardKeys"."0" = "Super+Shift+space";
+        "Hotkey/EnumerateForwardKeys"."0" = "F13";
+        "Hotkey/EnumerateBackwardKeys"."0" = "F14";
       };
     };
   };
