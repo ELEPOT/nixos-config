@@ -91,7 +91,7 @@
         [stage]
 
         Meta{Any} >> Meta{Any}
-        Meta >> Meta{Tab} 100ms E
+        Meta !Meta >> Meta{Tab{E}}
       '';
     };
 
