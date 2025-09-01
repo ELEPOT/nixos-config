@@ -173,8 +173,8 @@
 
         "Hotkey/TriggerKeys" = {};
         "Hotkey/AltTriggerKeys"."0" = "Shift+Shift_L";
-        "Hotkey/EnumerateForwardKeys"."0" = "Alt+Space";
-        "Hotkey/EnumerateBackwardKeys"."0" = "Alt+Shift_L+Space";
+        "Hotkey/EnumerateForwardKeys"."0" = "Alt+space";
+        "Hotkey/EnumerateBackwardKeys"."0" = "Alt+Shift_L+space";
       };
     };
   };
