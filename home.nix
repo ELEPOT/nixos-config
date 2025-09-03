@@ -93,7 +93,7 @@
 
         [stage]
 
-        Meta{Q} >> $(alacritty &)
+        Meta Q >> $(alacritty &)
       '';
     };
 
