@@ -90,11 +90,6 @@
 
         PageDown >> $(sh -c "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+") ^
         PageUp   >> $(sh -c "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-") ^
-
-        [stage]
-
-        Meta !Meta >> Meta{Tab{E}}
-
       '';
     };
 
@@ -128,8 +123,6 @@
       "org/gnome/desktop/wm/keybindings".activate-window-menu = [];
 
       "org/gnome/desktop/interface".enable-hot-corners = false;
-
-      "org/gnome/shell/extensions/advanced-alt-tab-window-switcher".switcher-popup-start-search = false;
     };
   };
 
