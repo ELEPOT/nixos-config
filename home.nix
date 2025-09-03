@@ -114,10 +114,10 @@
       "org/gnome/shell" = {
         disable-user-extensions = false;
         enabled-extensions = with pkgs.gnomeExtensions; [
-          kimpanel.extensionUuid
-          workspaces-indicator-by-open-apps.extensionUuid
-          advanced-alttab-window-switcher.extensionUuid
-          paperwm.extensionUuid
+          "advanced-alt-tab@G-dH.github.com"
+          "kimpanel@kde.org"
+          "paperwm@paperwm.github.com"
+          "workspaces-by-open-apps@favo02.github.com"
         ];
       };
 
