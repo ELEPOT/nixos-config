@@ -151,11 +151,18 @@
         move-monitor-left = ["<Control><Super>y"];
       };
 
-      "org/gnome/shell/extensions/paperwm".animation-time = 0;
+      "org/gnome/shell/extensions/paperwm" = {
+        animation-time = 0;
+        winprops = [
+          ''{"wm_class":".*","title":".*","preferredWidth":"50%"}''
+        ];
+      };
 
-      "org/gnome/shell/extensions/paperwm".winprops = [
-        ''{"wm_class":".*","title":"","preferredWidth":"50%"}''
-      ];
+      "org/gnome/shell/extensions/advanced-alt-tab-window-switcher" = {
+        switcher-popup-show-if-no-win = true;
+        app-switcher-popup-fav-apps = false;
+        app-switcher-popup-include-show-apps-icon = false;
+      };
     };
   };
 
