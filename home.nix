@@ -112,8 +112,7 @@
     enable = true;
     settings = {
       "org/gnome/shell" = {
-        disable-user-extensions = false;
-        enabled-extensions = with pkgs.gnomeExtensions; [
+        enabled-extensions = [
           "advanced-alt-tab@G-dH.github.com"
           "kimpanel@kde.org"
           "paperwm@paperwm.github.com"
