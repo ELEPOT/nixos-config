@@ -118,6 +118,7 @@
           "paperwm@paperwm.github.com"
           "workspaces-by-open-apps@favo02.github.com"
         ];
+        disabled-extensions = [];
       };
 
       "org/gnome/desktop/interface".color-scheme = "prefer-dark";
