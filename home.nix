@@ -90,6 +90,10 @@
 
         PageDown >> $(sh -c "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+") ^
         PageUp   >> $(sh -c "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-") ^
+
+        [stage]
+
+        Meta{Q} >> $(alacritty)
       '';
     };
 
