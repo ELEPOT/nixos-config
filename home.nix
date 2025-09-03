@@ -116,13 +116,46 @@
         disabled-extensions = [];
       };
 
-      "org/gnome/desktop/interface".color-scheme = "prefer-dark";
+      "org/gnome/desktop/interface" = {
+        color-scheme = "prefer-dark";
+        enable-hot-corners = false;
+      };
 
-      "org/gnome/desktop/wm/keybindings".switch-input-source = [];
-      "org/gnome/desktop/wm/keybindings".switch-input-source-backward = [];
-      "org/gnome/desktop/wm/keybindings".activate-window-menu = [];
+      "org/gnome/desktop/wm/keybindings" = {
+        switch-input-source = [];
+        switch-input-source-backward = [];
+        activate-window-menu = [];
+      };
 
-      "org/gnome/desktop/interface".enable-hot-corners = false;
+      "org/gnome/shell/extensions/paperwm/keybindings" = {
+        close-window = ["<Super>x"];
+        switch-left = ["<Super>h"];
+        switch-right = ["<Super>l"];
+        switch-up = ["<Super>k"];
+        switch-down = ["<Super>j"];
+        move-left = ["<Control><Super>h"];
+        move-right = ["<Control><Super>l"];
+        move-up = ["<Control><Super>k"];
+        move-down = ["<Control><Super>j"];
+        live-alt-tab = [];
+        slurp-in = ["<Super>semicolon"];
+        barf-out = ["<Shift><Super>quotedbl"];
+        barf-out-active = ["<Super>quotedbl"];
+        switch-up-workspace = ["<Super>i"];
+        switch-down-workspace = ["<Super>u"];
+        move-up-workspace = ["<Control><Super>i"];
+        move-down-workspace = ["<Control><Super>u"];
+        switch-monitor-right = ["<Super>o"];
+        switch-monitor-left = ["<Super>y"];
+        move-monitor-right = ["<Control><Super>o"];
+        move-monitor-left = ["<Control><Super>y"];
+      };
+
+      "org/gnome/shell/extensions/paperwm".animation-time = 0;
+
+      "org/gnome/shell/extensions/paperwm".winprops = [
+        ''{"wm_class":".*","title":"","preferredWidth":"50%"}''
+      ];
     };
   };
 
