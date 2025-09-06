@@ -67,7 +67,7 @@
     kdePackages.xdg-desktop-portal-kde
     gnome-tweaks
     adw-gtk3
-    glfw
+    glfw3-minecraft
 
     # gnome extensions
     gnomeExtensions.kimpanel
