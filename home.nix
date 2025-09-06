@@ -30,6 +30,7 @@
     ffmpeg
     yt-dlp
     memtester
+    libheif
 
     # tui
 
