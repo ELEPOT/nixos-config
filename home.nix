@@ -67,6 +67,7 @@
     kdePackages.xdg-desktop-portal-kde
     gnome-tweaks
     adw-gtk3
+    glfw
 
     # gnome extensions
     gnomeExtensions.kimpanel
