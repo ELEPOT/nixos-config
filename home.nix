@@ -67,6 +67,7 @@
     kdePackages.xdg-desktop-portal-kde
     gnome-tweaks
     adw-gtk3
+    wl-clipboard
 
     # gnome extensions
     gnomeExtensions.kimpanel
@@ -225,7 +226,7 @@
       set expandtab
       set tabstop=4 softtabstop=4 shiftwidth=4
 
-      set clipboard+=unnamedplus
+      set clipboard=unnamedplus
 
       autocmd BufEnter *.nix set tabstop=2 softtabstop=2 shiftwidth=2
     '';
