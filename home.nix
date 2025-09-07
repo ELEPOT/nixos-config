@@ -125,7 +125,7 @@
     "org.gnome.Nautilus" = {
       name = "n";
       exec = "nautilus --new-window %U";
-      icon = "codeblocks";
+      icon = "org.gnome.Nautilus";
       terminal = false;
       type = "Application";
       categories = ["GNOME" "GTK" "Utility" "Core" "FileManager"];
