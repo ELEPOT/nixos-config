@@ -122,7 +122,7 @@
       ];
     };
 
-    Nautilus = {
+    "org.gnome.Nautilus" = {
       name = "n";
       exec = "nautilus --new-window %U";
       icon = "codeblocks";
