@@ -158,15 +158,12 @@
       };
 
       "org/gnome/shell/extensions/paperwm" = {
-        animation-time = 0;
+        animation-time = 0.0;
         disable-topbar-styling = true;
         show-focus-mode-icon = false;
         show-open-position-icon = false;
-        minimap-scale = 0;
+        minimap-scale = 0.0;
         minimap-shade-opacity = 0;
-        winprops = [
-          ''{"wm_class":".*","title":".*","preferredWidth":"50%"}''
-        ];
       };
 
       "org/gnome/shell/extensions/advanced-alt-tab-window-switcher" = {
