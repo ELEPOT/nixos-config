@@ -123,8 +123,7 @@
     };
 
     "org.gnome.Nautilus" = {
-      name = "nautilus";
-      genericName = "n";
+      name = "n";
       exec = "nautilus --new-window %U";
       icon = "org.gnome.Nautilus";
       terminal = false;
