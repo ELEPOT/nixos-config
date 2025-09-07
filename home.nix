@@ -159,6 +159,11 @@
 
       "org/gnome/shell/extensions/paperwm" = {
         animation-time = 0;
+        disable-topbar-styling = true;
+        show-focus-mode-icon = false;
+        show-open-position-icon = false;
+        minimap-scale = 0;
+        minimap-shade-opacity = 0;
         winprops = [
           ''{"wm_class":".*","title":".*","preferredWidth":"50%"}''
         ];
