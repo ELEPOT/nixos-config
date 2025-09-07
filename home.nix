@@ -123,8 +123,7 @@
     };
 
     "org.gnome.Nautilus" = {
-      name = "檔案";
-      comment = "n";
+      name = "n";
       exec = "nautilus --new-window %U";
       icon = "org.gnome.Nautilus";
       terminal = false;
@@ -137,9 +136,6 @@
           name = "New Window";
           exec = "nautilus --new-window";
         };
-      };
-      settings = {
-        "Keywords" = "n;";
       };
     };
   };
