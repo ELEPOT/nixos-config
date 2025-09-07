@@ -123,7 +123,7 @@
     };
 
     "org.gnome.Nautilus" = {
-      name = "n";
+      name = "n 檔案";
       exec = "nautilus --new-window %U";
       icon = "org.gnome.Nautilus";
       terminal = false;
