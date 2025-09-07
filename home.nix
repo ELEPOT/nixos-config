@@ -124,7 +124,7 @@
 
     "org.gnome.Nautilus" = {
       name = "檔案";
-      genericName = "n";
+      comment = "n";
       exec = "nautilus --new-window %U";
       icon = "org.gnome.Nautilus";
       terminal = false;
