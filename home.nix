@@ -58,10 +58,6 @@
     audacity
     gnome-software
 
-    jetbrains.rider
-    jetbrains.clion
-    jetbrains.pycharm-professional
-
     keymapper
     xdg-desktop-portal
     kdePackages.xdg-desktop-portal-kde

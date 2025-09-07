@@ -219,6 +219,10 @@
     onlyoffice-desktopeditors
     git
     vim
+
+    jetbrains.rider
+    jetbrains.clion
+    jetbrains.pycharm-professional
   ];
 
   environment.variables = {
