@@ -106,6 +106,26 @@
   home.sessionVariables = {
   };
 
+  xdg.desktopEntries = {
+    codeblocks = {
+      name = "Code::Blocks IDE";
+      genericName = "Integrated development environment";
+      comment = "Configurable and extensible IDE";
+      exec = "nix-shell -p gcc --command codeblocks %F";
+      icon = "codeblocks";
+      terminal = false;
+      categories = ["Development" "IDE" "GTK"];
+      startupNotify = false;
+      mimeType = [
+        "application/x-codeblocks"
+        "application/x-codeblocks-workspace"
+      ];
+      settings = {
+        X-MultipleArgs = "false";
+      };
+    };
+  };
+
   dconf = {
     enable = true;
     settings = {
