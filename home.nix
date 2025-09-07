@@ -57,9 +57,7 @@
     protonvpn-gui
     audacity
     gnome-software
-    jetbrains.rider
-    jetbrains.clion
-    jetbrains.pycharm-professional
+    jetbrains-toolbox
 
     keymapper
     xdg-desktop-portal
