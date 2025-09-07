@@ -58,6 +58,7 @@
     audacity
     gnome-software
     jetbrains-toolbox
+    codeblocks
 
     keymapper
     xdg-desktop-portal
