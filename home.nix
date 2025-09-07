@@ -138,6 +138,9 @@
           exec = "nautilus --new-window";
         };
       };
+      settings = {
+        "Keywords" = "n;";
+      };
     };
   };
 
