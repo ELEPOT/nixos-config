@@ -195,6 +195,9 @@
         show-open-position-icon = false;
         minimap-scale = 0.0;
         minimap-shade-opacity = 0;
+        vertical-margin = 10;
+        vertical-margin-bottom = 10;
+        horizontal-margin = 10;
       };
 
       "org/gnome/shell/extensions/advanced-alt-tab-window-switcher" = {
