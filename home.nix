@@ -102,29 +102,20 @@
       '';
     };
 
-    "./config.sh" = {
-      source = "${inputs.assets}/scripts/config.sh";
-    };
-    "./osu_map_adder.sh" = {
-      source = "${inputs.assets}/scripts/osu_map_adder.sh";
-    };
-    "./osu_skin_adder.sh" = {
-      source = "${inputs.assets}/scripts/osu_skin_adder.sh";
-    };
-    "./shadowing.sh" = {
-      source = "${inputs.assets}/scripts/shadowing.sh";
-    };
-    "./fl_studio.sh" = {
-      source = "${inputs.assets}/scripts/fl_studio.sh";
+    "./scripts" = {
+      source = "${inputs.assets}/scripts";
+      recursive = true;
     };
 
-    "./.local/share/bg.jpg" = {
+    "./.local/share/backgrounds/bg.jpg" = {
       source = "${inputs.assets}/bg.jpg";
     };
   };
 
   home.sessionVariables = {
   };
+
+  home.sessionPath = ["$HOME/scripts"];
 
   xdg.desktopEntries = {
     codeblocks = {
