@@ -204,7 +204,6 @@
   ];
 
   programs.nix-ld.enable = true;
-  programs.niri.enable = true;
   programs.chromium.enable = true;
   programs.firefox.enable = true;
   programs.steam = {

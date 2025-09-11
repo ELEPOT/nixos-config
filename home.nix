@@ -101,6 +101,11 @@
         keymapper -u &
       '';
     };
+
+    "./" = {
+      source = "${inputs.assets}/scripts";
+      recursive = true;
+    };
   };
 
   home.sessionVariables = {
@@ -156,6 +161,11 @@
       "org/gnome/desktop/interface" = {
         color-scheme = "prefer-dark";
         enable-hot-corners = false;
+      };
+
+      "org/gnome/desktop/background" = {
+        picture-uri = "file:///home/elepot/.local/share/backgrounds/bj.jpg";
+        picture-uri-dark = "file:///home/elepot/.local/share/backgrounds/bj.jpg";
       };
 
       "org/gnome/desktop/wm/keybindings" = {

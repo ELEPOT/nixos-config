@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "assets": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1757597928,
+        "narHash": "sha256-U3vRdx7NzCgGyF/LmyxCsF7/lvzNntMDewLVYekilM8=",
+        "owner": "ELEPOT",
+        "repo": "nixos-assets",
+        "rev": "3699b4f8fcac84158c999a47ac930456e5661b19",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ELEPOT",
+        "repo": "nixos-assets",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -86,6 +102,7 @@
     },
     "root": {
       "inputs": {
+        "assets": "assets",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "swww": "swww",

@@ -10,6 +10,11 @@
 
     zen-browser.url = "github:DanMyers300/zen-browser-flake";
     swww.url = "github:LGFae/swww";
+
+    assets = {
+      url = "github:ELEPOT/nixos-assets";
+      flake = false;
+    };
   };
 
   outputs = {
