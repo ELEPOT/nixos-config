@@ -102,9 +102,8 @@
       '';
     };
 
-    "./" = {
-      source = "${inputs.assets}/scripts";
-      recursive = true;
+    "./config.sh" = {
+      source = "${inputs.assets}/scripts/config.sh";
     };
   };
 
