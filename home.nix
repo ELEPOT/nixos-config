@@ -170,8 +170,8 @@
       };
 
       "org/gnome/desktop/background" = {
-        picture-uri = "file:///home/elepot/.local/share/backgrounds/bj.jpg";
-        picture-uri-dark = "file:///home/elepot/.local/share/backgrounds/bj.jpg";
+        picture-uri = "file:///home/elepot/.local/share/backgrounds/bg.jpg";
+        picture-uri-dark = "file:///home/elepot/.local/share/backgrounds/bg.jpg";
       };
 
       "org/gnome/desktop/wm/keybindings" = {
