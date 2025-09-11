@@ -115,8 +115,6 @@
   home.sessionVariables = {
   };
 
-  home.sessionPath = ["$HOME/scripts"];
-
   xdg.desktopEntries = {
     codeblocks = {
       name = "Code::Blocks IDE";
