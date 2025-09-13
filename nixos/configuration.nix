@@ -63,7 +63,7 @@
               <string>mono</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
-                <string>JetBrainsMonoNLNerdFontMono</string>
+                <string>JetBrainsMonoNL NFM</string>
             </edit>
             <edit name="family" mode="prepend" binding="strong">
                 <string>NotoSansCJK</string>
