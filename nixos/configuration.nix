@@ -66,16 +66,7 @@
                 <string>JetBrainsMonoNLNerdFontMono</string>
             </edit>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansTC</string>
-            </edit>
-            <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansJP</string>
-            </edit>
-            <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansSC</string>
-            </edit>
-            <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansKR</string>
+                <string>NotoSansCJK</string>
             </edit>
           </match>
         </fontconfig>
