@@ -1,3 +1,4 @@
 result/
 nixos/hardware-configuration.nix
 device_specific/*
+flake.lock
