@@ -16,6 +16,8 @@
         Alt{Space} >> Alt{Space}
         Alt{Shift{Space}} >> Alt{Shift{Space}}
 
+        Alt >> Meta
+
         PageDown >> $(sh -c "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+") ^
         PageUp   >> $(sh -c "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-") ^
       '';
