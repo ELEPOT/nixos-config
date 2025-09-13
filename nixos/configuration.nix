@@ -40,6 +40,7 @@
     LC_TIME = "zh_TW.UTF-8";
   };
 
+  #test
   i18n.inputMethod = {
     enable = true;
     type = "fcitx5";
