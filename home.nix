@@ -32,7 +32,6 @@
     libguestfs-with-appliance # mount vhdx
     ffmpeg
     yt-dlp
-    memtester
     libheif
 
     # tui
