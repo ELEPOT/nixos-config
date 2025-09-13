@@ -36,15 +36,17 @@
       modules = [
         ./nixos/configuration.nix
         ./nixos/hardware-configuration.nix
-      ];
-    };
 
-    homeConfigurations = {
-      elepot = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        modules = [./home.nix];
-        extraSpecialArgs = {inherit inputs;};
-      };
+        home-manager.nixosModules.home-manager
+        {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            users.elepot = import ./home.nix;
+            extraSpecialArgs = {inherit inputs;};
+          };
+        }
+      ];
     };
   };
 }

@@ -3,11 +3,11 @@
     "assets": {
       "flake": false,
       "locked": {
-        "lastModified": 1757597928,
-        "narHash": "sha256-U3vRdx7NzCgGyF/LmyxCsF7/lvzNntMDewLVYekilM8=",
+        "lastModified": 1757738505,
+        "narHash": "sha256-5Rl6VlXLCE/179thLhFoN6e0QhFxK06DkjHz1iwamok=",
         "owner": "ELEPOT",
         "repo": "nixos-assets",
-        "rev": "3699b4f8fcac84158c999a47ac930456e5661b19",
+        "rev": "f974f730497ba17a9ec9a471ce9e43bf37d077b1",
         "type": "github"
       },
       "original": {
@@ -23,11 +23,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1756022458,
-        "narHash": "sha256-J1i35r4HfNDdPpwL0vOBaZopQudAUVtartEerc1Jryc=",
+        "lastModified": 1757698511,
+        "narHash": "sha256-UqHHGydF/q3jfYXCpvYLA0TWtvByOp1NwOKCUjhYmPs=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "9e3a33c0bcbc25619e540b9dfea372282f8a9740",
+        "rev": "a3fcc92180c7462082cd849498369591dfb20855",
         "type": "github"
       },
       "original": {
