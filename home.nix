@@ -154,6 +154,7 @@
 
       "org/gnome/desktop/interface" = {
         color-scheme = "prefer-dark";
+        accent-color = "orange";
         enable-hot-corners = false;
       };
 
@@ -199,6 +200,7 @@
         show-open-position-icon = false;
         minimap-scale = 0.0;
         minimap-shade-opacity = 0;
+        section-border-radius-top = 0;
         vertical-margin = 10;
         vertical-margin-bottom = 10;
         horizontal-margin = 10;
