@@ -6,7 +6,7 @@
   functions,
   ...
 }: {
-  imports = [./device_specific/configuration.nix];
+  imports = [] ++ functions.ifExists ../device_specific/configuration.nix;
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
