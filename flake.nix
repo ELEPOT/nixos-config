@@ -1,5 +1,5 @@
 {
-  description = "Dont really matter";
+    description = "Dont really matter";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -37,15 +37,15 @@
       inherit system;
       specialArgs = {inherit inputs functions;};
       modules = [
-        ./configuration.nix
-        ./../device-specific/hardware-configuration.nix
+        ./nixos-config/configuration.nix
+        ./device-specific/hardware-configuration.nix
 
         home-manager.nixosModules.home-manager
         {
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            users.elepot = import ./home.nix;
+            users.elepot = import ./nixos-config/home.nix;
             extraSpecialArgs = {inherit inputs functions;};
           };
         }
