@@ -5,7 +5,7 @@
   functions,
   ...
 }: {
-  imports = [] ++ functions.ifExists ./device_specific/home.nix;
+  imports = [] ++ functions.ifExists ./../device-specific/home.nix;
 
   home.username = "elepot";
   home.homeDirectory = "/home/elepot";

@@ -37,8 +37,8 @@
       inherit system;
       specialArgs = {inherit inputs functions;};
       modules = [
-        ./nixos/configuration.nix
-        ./nixos/hardware-configuration.nix
+        ./configuration.nix
+        ./../device-specific/hardware-configuration.nix
 
         home-manager.nixosModules.home-manager
         {
