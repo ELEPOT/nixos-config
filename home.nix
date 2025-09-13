@@ -33,6 +33,7 @@
     ffmpeg
     yt-dlp
     libheif
+    tree
 
     # tui
 
