@@ -38,7 +38,6 @@
     inputs.zen-browser.packages.${system}.default
     obsidian
     (blender-hip.override {cudaSupport = true;})
-    alacritty # terminal
     swayimg
     bottles
     krita
@@ -260,6 +259,15 @@
     };
   };
 
+  programs.alacritty = {
+    enable = true;
+    settings = {
+      font.normal = {
+        family = "JetBrainsMonoNLNerdFontMono";
+        style = "Regular";
+      };
+    };
+  };
   programs.neovim = {
     enable = true;
     extraConfig = ''

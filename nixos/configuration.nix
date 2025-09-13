@@ -51,22 +51,11 @@
         <fontconfig>
           <match target="pattern">
             <test qual="any" name="family" compare="not_contains">
-              <string>mono</string>
+              <string>NotoSansCJK</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
                 <string>NotoSansCJK</string>
             </edit>
-            </edit>
-          </match>
-          <match target="pattern">
-            <test qual="any" name="family" compare="contains">
-              <string>mono</string>
-            </test>
-            <edit name="family" mode="prepend" binding="strong">
-                <string>JetBrainsMono</string>
-            </edit>
-            <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansCJK</string>
             </edit>
           </match>
         </fontconfig>
