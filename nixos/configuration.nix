@@ -54,16 +54,8 @@
               <string>mono</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansTC</string>
+                <string>NotoSansCJK</string>
             </edit>
-            <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansJP</string>
-            </edit>
-            <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansSC</string>
-            </edit>
-            <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansKR</string>
             </edit>
           </match>
           <match target="pattern">
