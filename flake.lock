@@ -3,11 +3,11 @@
     "assets": {
       "flake": false,
       "locked": {
-        "lastModified": 1757778665,
-        "narHash": "sha256-UlVX4e8LIcklFt4u/TyheArHa4SvqK+/5gFUjD3xfMA=",
+        "lastModified": 1757778890,
+        "narHash": "sha256-aP2+JLT5CUKv4XfgTOlLoiUDOq8TKhKzECv1u98rvrc=",
         "owner": "ELEPOT",
         "repo": "nixos-assets",
-        "rev": "422ff30268ee8c40dfff5671fd5b1955267aa2be",
+        "rev": "e529e92f4710c3f8fee1f3ebf7eded2c4207f1e0",
         "type": "github"
       },
       "original": {
