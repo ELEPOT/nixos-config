@@ -3,18 +3,22 @@
   pkgs,
   system,
   inputs,
+  functions,
   ...
 }: {
+  imports = [./device_specific/configuration.nix];
+
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  nixpkgs.config.allowUnfree = true;
+
   boot.loader.efi.canTouchEfiVariables = true;
+
   boot.loader.grub = {
     enable = true;
     efiSupport = true;
     device = "nodev";
   };
-  boot.kernelParams = ["nouveau.config=NvGsoRm=1"];
-  boot.initrd.kernelModules = ["nvidia"];
 
   networking.hostName = "nixos";
 
@@ -34,6 +38,53 @@
     LC_PAPER = "zh_TW.UTF-8";
     LC_TELEPHONE = "zh_TW.UTF-8";
     LC_TIME = "zh_TW.UTF-8";
+  };
+
+  i18n.inputMethod = {
+    enable = true;
+    type = "fcitx5";
+    fcitx5.waylandFrontend = true;
+    fcitx5.addons = with pkgs; [
+      fcitx5-chewing
+      fcitx5-anthy
+      fcitx5-gtk
+    ];
+
+    fcitx5.settings = {
+      inputMethod = {
+        "Groups/0" = {
+          Name = "預設";
+          "Default Layout" = "us";
+          DefaultIM = "chewing";
+        };
+
+        "Groups/0/Items/0" = {
+          Name = "keyboard-us";
+        };
+
+        "Groups/0/Items/1" = {
+          Name = "chewing";
+        };
+
+        "Groups/0/Items/2" = {
+          Name = "anthy";
+        };
+
+        GroupOrder."0" = "預設";
+      };
+
+      globalOptions = {
+        "Hotkey" = {
+          EnumerateWithTriggerKeys = true;
+          EnumerateSkipFirst = false;
+        };
+
+        "Hotkey/TriggerKeys" = {};
+        "Hotkey/AltTriggerKeys"."0" = "Shift+Shift_L";
+        "Hotkey/EnumerateForwardKeys"."0" = "Alt+space";
+        "Hotkey/EnumerateBackwardKeys"."0" = "Alt+Shift+space";
+      };
+    };
   };
 
   fonts = {
@@ -64,20 +115,6 @@
     };
   };
 
-  hardware.graphics = {
-    enable = true;
-    extraPackages = with pkgs; [
-      vpl-gpu-rt
-    ];
-  };
-
-  hardware.nvidia = {
-    modesetting.enable = true;
-    open = true;
-    nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
-  };
-
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;
@@ -86,7 +123,6 @@
   hardware.opentabletdriver.enable = true;
 
   services.xserver.enable = true;
-  services.xserver.videoDrivers = ["nvidia"];
 
   services.displayManager.gdm = {
     enable = true;
@@ -158,34 +194,20 @@
 
   services.flatpak.enable = true;
 
-  systemd.services.keymapperd = {
-    enable = true;
-    wantedBy = ["multi-user.target"];
-    serviceConfig = {
-      ExecStart = ''${pkgs.keymapper}/bin/keymapperd'';
-    };
-  };
-
   users.users.elepot = {
     isNormalUser = true;
     description = "ELEPOT";
     extraGroups = ["networkmanager" "wheel" "dialout"];
   };
 
-  nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.permittedInsecurePackages = [
-  ];
-
   programs.nix-ld.enable = true;
-  programs.chromium.enable = true;
-  programs.firefox.enable = true;
+
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
   };
-  programs.direnv.enable = true;
 
   environment.systemPackages = with pkgs; [
     onlyoffice-desktopeditors

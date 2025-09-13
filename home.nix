@@ -2,8 +2,11 @@
   config,
   pkgs,
   inputs,
+  functions,
   ...
 }: {
+  imports = [] ++ functions.ifExists ./device_specific/home.nix;
+
   home.username = "elepot";
   home.homeDirectory = "/home/elepot";
 
@@ -74,33 +77,6 @@
   ];
 
   home.file = {
-    "./.config/keymapper.conf" = {
-      text = ''
-        Alt{Space{Any}} >> Alt{Any}
-        Alt{Space{Shift{Any}}} >> Alt{Shift{Any}}
-        Control{Alt{Space{Any}}} >> Control{Alt{Any}}
-        Control{Shift{Alt{Space{Any}}}} >> Control{Shift{Alt{Any}}}
-
-        Alt{Space} >> Alt{Space}
-        Alt{Shift{Space}} >> Alt{Shift{Space}}
-
-        Alt >> Meta
-
-        PageDown >> $(sh -c "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+") ^
-        PageUp   >> $(sh -c "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-") ^
-
-        [stage]
-
-        Meta{Q} >> $(sh -c "alacritty &") ^
-      '';
-    };
-
-    "./.profile" = {
-      text = ''
-        keymapper -u &
-      '';
-    };
-
     "./scripts" = {
       source = "${inputs.assets}/scripts";
       recursive = true;
@@ -214,53 +190,6 @@
     };
   };
 
-  i18n.inputMethod = {
-    enable = true;
-    type = "fcitx5";
-    fcitx5.waylandFrontend = true;
-    fcitx5.addons = with pkgs; [
-      fcitx5-chewing
-      fcitx5-anthy
-      fcitx5-gtk
-    ];
-
-    fcitx5.settings = {
-      inputMethod = {
-        "Groups/0" = {
-          Name = "預設";
-          "Default Layout" = "us";
-          DefaultIM = "chewing";
-        };
-
-        "Groups/0/Items/0" = {
-          Name = "keyboard-us";
-        };
-
-        "Groups/0/Items/1" = {
-          Name = "chewing";
-        };
-
-        "Groups/0/Items/2" = {
-          Name = "anthy";
-        };
-
-        GroupOrder."0" = "預設";
-      };
-
-      globalOptions = {
-        "Hotkey" = {
-          EnumerateWithTriggerKeys = true;
-          EnumerateSkipFirst = false;
-        };
-
-        "Hotkey/TriggerKeys" = {};
-        "Hotkey/AltTriggerKeys"."0" = "Shift+Shift_L";
-        "Hotkey/EnumerateForwardKeys"."0" = "Alt+space";
-        "Hotkey/EnumerateBackwardKeys"."0" = "Alt+Shift+space";
-      };
-    };
-  };
-
   programs.alacritty = {
     enable = true;
     settings = {
@@ -270,6 +199,7 @@
       };
     };
   };
+
   programs.neovim = {
     enable = true;
     extraConfig = ''
@@ -289,6 +219,19 @@
     userName = "ELEPOT";
     userEmail = "elepotmail0@gmail.com";
   };
+
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
+  };
+
+  programs.bash = {
+    enable = true;
+  };
+
+  programs.chromium.enable = true;
+
+  programs.firefox.enable = true;
 
   programs.home-manager.enable = true;
 }

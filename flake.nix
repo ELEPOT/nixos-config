@@ -18,7 +18,6 @@
   };
 
   outputs = {
-    self,
     nixpkgs,
     home-manager,
     ...
@@ -29,10 +28,14 @@
       inherit system;
       config = {allowUnfree = true;};
     };
+
+    functions = {
+      ifExists = file: pkgs.lib.optional (builtins.pathExists file) file;
+    };
   in {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       inherit system;
-      specialArgs = {inherit inputs;};
+      specialArgs = {inherit inputs functions;};
       modules = [
         ./nixos/configuration.nix
         ./nixos/hardware-configuration.nix
@@ -43,7 +46,7 @@
             useGlobalPkgs = true;
             useUserPackages = true;
             users.elepot = import ./home.nix;
-            extraSpecialArgs = {inherit inputs;};
+            extraSpecialArgs = {inherit inputs functions;};
           };
         }
       ];
