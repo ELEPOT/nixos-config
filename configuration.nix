@@ -209,8 +209,12 @@
     localNetworkGameTransfers.openFirewall = true;
   };
 
+  programs.nautilus-open-any-terminal = {
+    enable = true;
+    terminal = "alacritty";
+  };
+
   environment.systemPackages = with pkgs; [
-    onlyoffice-desktopeditors
     git
     vim
   ];

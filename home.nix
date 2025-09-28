@@ -34,11 +34,13 @@
     yt-dlp
     libheif
     tree
+    lm_sensors
 
     # tui
 
     # gui
     inputs.zen-browser.packages.${system}.default
+    inputs.fancontrol-gui.packages.${system}.default
     obsidian
     (blender-hip.override {cudaSupport = true;})
     swayimg
