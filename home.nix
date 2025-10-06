@@ -76,6 +76,9 @@
     gnomeExtensions.workspaces-indicator-by-open-apps
     gnomeExtensions.advanced-alttab-window-switcher
     gnomeExtensions.paperwm
+
+    # dev
+    conda
   ];
 
   home.file = {
