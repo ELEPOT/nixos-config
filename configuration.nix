@@ -200,6 +200,12 @@
     extraGroups = ["networkmanager" "wheel" "dialout"];
   };
 
+  users.users.guest = {
+    isNormalUser = true;
+    description = "guest";
+    extraGroups = ["networkmanager" "wheel" "dialout"];
+  };
+
   programs.nix-ld.enable = true;
 
   programs.steam = {

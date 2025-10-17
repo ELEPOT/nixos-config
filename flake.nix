@@ -48,6 +48,7 @@
             useGlobalPkgs = true;
             useUserPackages = true;
             users.elepot = import ./nixos-config/home.nix;
+            users.guest = import ./nixos-config/home-guest.nix;
             extraSpecialArgs = {inherit inputs functions;};
           };
         }
