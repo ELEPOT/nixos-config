@@ -202,6 +202,8 @@
 
   services.flatpak.enable = true;
 
+  services.fwupd.enable = true;
+
   users.users.elepot = {
     isNormalUser = true;
     description = "ELEPOT";
