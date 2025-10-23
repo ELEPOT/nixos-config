@@ -103,11 +103,19 @@
         <fontconfig>
           <match target="pattern">
             <test qual="any" name="family" compare="not_contains">
-              <string>NotoSansCJK</string>
+              <string>mono</string>
             </test>
             <edit name="family" mode="prepend" binding="strong">
-                <string>NotoSansCJK</string>
+                <string>NotoSansCJKTC</string>
             </edit>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>NotoSansCJKJP</string>
+            </edit>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>NotoSansCJKSC</string>
+            </edit>
+            <edit name="family" mode="prepend" binding="strong">
+                <string>NotoSansCJKKR</string>
             </edit>
           </match>
         </fontconfig>

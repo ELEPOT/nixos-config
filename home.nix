@@ -20,7 +20,6 @@
     rsync # better cp
     ntfs3g # ntfs disk fixer
     progress
-    pamixer
     toybox
     nmap
     libnotify
@@ -40,7 +39,6 @@
 
     # gui
     inputs.zen-browser.packages.${system}.default
-    inputs.fancontrol-gui.packages.${system}.default
     obsidian
     (blender-hip.override {cudaSupport = true;})
     swayimg
@@ -56,7 +54,6 @@
     appeditor
     mpv-unwrapped
     godot
-    aseprite
     obs-studio
     protonvpn-gui
     audacity
@@ -185,7 +182,6 @@
         vertical-margin = 10;
         vertical-margin-bottom = 10;
         horizontal-margin = 10;
-        selection-border-size = 0;
       };
 
       "org/gnome/shell/extensions/advanced-alt-tab-window-switcher" = {
@@ -199,9 +195,16 @@
   programs.alacritty = {
     enable = true;
     settings = {
+      general = {
+        import = ["${inputs.alacritty-catppuccin}/catppuccin-mocha.toml"];
+      };
       font.normal = {
         family = "JetBrainsMonoNLNerdFontMono";
         style = "Regular";
+      };
+      window = {
+        decorations = "None";
+        opacity = 1;
       };
     };
   };

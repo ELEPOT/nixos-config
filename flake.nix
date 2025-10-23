@@ -2,9 +2,6 @@
     description = "Dont really matter";
 
   inputs = {
-    fancontrol-gui.url = "github:JaysFreaky/fancontrol-gui";
-    zen-browser.url = "github:DanMyers300/zen-browser-flake";
-
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
@@ -17,6 +14,14 @@
       flake = false;
     };
 
+    zen-browser = {
+       url = "github:DanMyers300/zen-browser-flake";
+    };
+
+    alacritty-catppuccin = {
+      url = "github:catppuccin/alacritty";
+      flake = false;
+    };
   };
 
   outputs = {
