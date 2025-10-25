@@ -53,7 +53,7 @@
     mumble
     appeditor
     mpv-unwrapped
-    godot
+    godot-mono
     obs-studio
     protonvpn-gui
     audacity
@@ -77,6 +77,9 @@
 
     # dev
     poetry
+
+
+    faudio
   ];
 
   home.file = {

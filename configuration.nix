@@ -174,23 +174,23 @@
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
 
-  security.rtkit.enable = true;
-
   services.pipewire = {
     enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
+#    alsa.enable = true;
+#    alsa.support32Bit = true;
+#    pulse.enable = true;
     extraConfig = {
       pipewire = {
         "clock" = {
           default.clock.rate = 48000;
-          default.clock.allowed-rates = [44100 48000 96000];
+          default.clock.allowed-rates = [44100 48000 96000 192000];
           default.clock.min-quantum = 16;
         };
       };
     };
   };
+
+  security.rtkit.enable = true;
 
   services.udev.packages = with pkgs; [
     platformio-core
@@ -207,13 +207,13 @@
   users.users.elepot = {
     isNormalUser = true;
     description = "ELEPOT";
-    extraGroups = ["networkmanager" "wheel" "dialout"];
+    extraGroups = ["networkmanager" "wheel" "dialout" "audio"];
   };
 
   users.users.guest = {
     isNormalUser = true;
     description = "guest";
-    extraGroups = ["networkmanager" "wheel" "dialout"];
+    extraGroups = ["networkmanager" "wheel" "dialout" "audio"];
   };
 
   programs.nix-ld.enable = true;

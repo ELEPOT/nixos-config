@@ -20,7 +20,6 @@
     rsync # better cp
     ntfs3g # ntfs disk fixer
     progress
-    pamixer
     toybox
     nmap
     libnotify
@@ -34,6 +33,7 @@
     yt-dlp
     libheif
     tree
+    lm_sensors
 
     # tui
 
@@ -54,13 +54,13 @@
     appeditor
     mpv-unwrapped
     godot
-    aseprite
     obs-studio
     protonvpn-gui
     audacity
     gnome-software
     jetbrains-toolbox
     codeblocks
+    betterdiscordctl
 
     keymapper
     xdg-desktop-portal
@@ -74,6 +74,11 @@
     gnomeExtensions.workspaces-indicator-by-open-apps
     gnomeExtensions.advanced-alttab-window-switcher
     gnomeExtensions.paperwm
+
+    # dev
+    poetry
+
+    faudio
   ];
 
   home.file = {
