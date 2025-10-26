@@ -91,6 +91,11 @@
     "./.local/share/backgrounds/bg.jpg" = {
       source = "${inputs.assets}/bg.jpg";
     };
+
+    "./.config/godot/text_editor_themes" = {
+      source = "${inputs.assets}/godot-themes";
+      recursive = true;
+    };
   };
 
   home.sessionVariables = {
