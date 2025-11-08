@@ -34,6 +34,9 @@
     libheif
     tree
     lm_sensors
+    mutter
+    pciutils
+    wlr-randr
 
     # tui
 
@@ -59,6 +62,7 @@
     audacity
     gnome-software
     jetbrains-toolbox
+    vscode
     codeblocks
     betterdiscordctl
 
