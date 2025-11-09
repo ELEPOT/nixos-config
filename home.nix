@@ -65,6 +65,7 @@
     vscode
     codeblocks
     betterdiscordctl
+    gparted
 
     keymapper
     xdg-desktop-portal

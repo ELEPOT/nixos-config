@@ -45,6 +45,8 @@
     type = "fcitx5";
     fcitx5.waylandFrontend = true;
     fcitx5.addons = with pkgs; [
+      fcitx5-chinese-addons
+      fcitx5-table-extra
       fcitx5-chewing
       fcitx5-anthy
       fcitx5-gtk
@@ -67,6 +69,10 @@
         };
 
         "Groups/0/Items/2" = {
+          Name = "boshiamy";
+        };
+
+        "Groups/0/Items/3" = {
           Name = "anthy";
         };
 
