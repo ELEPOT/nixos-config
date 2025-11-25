@@ -66,6 +66,7 @@
     codeblocks
     betterdiscordctl
     gparted
+    openutau
 
     keymapper
     xdg-desktop-portal
