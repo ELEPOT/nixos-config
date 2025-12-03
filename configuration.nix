@@ -253,5 +253,5 @@
     GSK_RENDERER = "ngl";
   };
 
-  system.stateVersion = "25.11"; # Did you read the comment?
+  stdenv.hostPlatform.system.stateVersion = "25.11"; # Did you read the comment?
 }

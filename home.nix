@@ -238,8 +238,10 @@
 
   programs.git = {
     enable = true;
-    userName = "ELEPOT";
-    userEmail = "elepotmail0@gmail.com";
+    settings = {
+      userName = "ELEPOT";
+      userEmail = "elepotmail0@gmail.com";
+    };
   };
 
   programs.direnv = {
