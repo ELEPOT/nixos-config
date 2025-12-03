@@ -45,7 +45,7 @@
     type = "fcitx5";
     fcitx5.waylandFrontend = true;
     fcitx5.addons = with pkgs; [
-      fcitx5-chinese-addons
+      qt6Packages.fcitx5-chinese-addons
       fcitx5-table-extra
       fcitx5-chewing
       fcitx5-anthy
@@ -96,7 +96,7 @@
   fonts = {
     packages = with pkgs; [
       noto-fonts
-      noto-fonts-emoji
+      noto-fonts-color-emoji
       nerd-fonts.jetbrains-mono
     ];
 
@@ -182,9 +182,9 @@
 
   services.pipewire = {
     enable = true;
-#    alsa.enable = true;
-#    alsa.support32Bit = true;
-#    pulse.enable = true;
+    #    alsa.enable = true;
+    #    alsa.support32Bit = true;
+    #    pulse.enable = true;
     extraConfig = {
       pipewire = {
         "clock" = {
@@ -253,5 +253,5 @@
     GSK_RENDERER = "ngl";
   };
 
-  system.stateVersion = "25.05"; # Did you read the comment?
+  system.stateVersion = "25.11"; # Did you read the comment?
 }

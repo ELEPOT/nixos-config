@@ -1,5 +1,5 @@
 {
-    description = "Dont really matter";
+  description = "Dont really matter";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -15,7 +15,7 @@
     };
 
     zen-browser = {
-       url = "github:DanMyers300/zen-browser-flake";
+      url = "github:DanMyers300/zen-browser-flake";
     };
 
     alacritty-catppuccin = {

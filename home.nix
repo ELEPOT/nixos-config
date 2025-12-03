@@ -10,7 +10,7 @@
   home.username = "elepot";
   home.homeDirectory = "/home/elepot";
 
-  home.stateVersion = "25.05";
+  home.stateVersion = "25.11";
 
   home.packages = with pkgs; [
     # cli tools
@@ -83,7 +83,6 @@
 
     # dev
     poetry
-
 
     faudio
   ];
