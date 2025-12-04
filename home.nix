@@ -83,7 +83,6 @@
 
     # dev
     poetry
-    gcc
 
     faudio
   ];
