@@ -83,7 +83,7 @@
 
     # dev
     poetry
-    gcc
+    (gcc // {meta.priority = 1;})
 
     faudio
   ];
