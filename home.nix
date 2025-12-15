@@ -37,6 +37,7 @@
     mutter
     pciutils
     wlr-randr
+    iw
 
     # tui
 
