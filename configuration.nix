@@ -23,6 +23,7 @@
   networking.hostName = "nixos";
 
   networking.networkmanager.enable = true;
+  networking.firewall.enable = false;
 
   time.timeZone = "Asia/Taipei";
 
