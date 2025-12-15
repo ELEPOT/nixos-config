@@ -76,6 +76,8 @@
     adw-gtk3
     wl-clipboard
 
+    soundwireserver
+
     # gnome extensions
     gnomeExtensions.kimpanel
     gnomeExtensions.workspaces-indicator-by-open-apps
