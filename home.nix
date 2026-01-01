@@ -68,6 +68,7 @@
     betterdiscordctl
     gparted
     openutau
+    reaper
 
     keymapper
     xdg-desktop-portal
@@ -87,6 +88,7 @@
     (gcc // {meta.priority = 1;})
 
     faudio
+    alsa-lib
   ];
 
   home.file = {

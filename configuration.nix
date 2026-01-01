@@ -69,10 +69,6 @@
           Name = "chewing";
         };
 
-        "Groups/0/Items/2" = {
-          Name = "boshiamy";
-        };
-
         "Groups/0/Items/3" = {
           Name = "anthy";
         };
@@ -90,6 +86,10 @@
         "Hotkey/AltTriggerKeys"."0" = "Shift+Shift_L";
         "Hotkey/EnumerateForwardKeys"."0" = "Alt+space";
         "Hotkey/EnumerateBackwardKeys"."0" = "Alt+Shift+space";
+      };
+
+      addons = {
+        chewing.globalSection.Layout = "Hsu's Keyboard";
       };
     };
   };
