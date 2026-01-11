@@ -58,7 +58,6 @@
     appeditor
     mpv-unwrapped
     godot-mono
-    obs-studio
     (wrapOBS {
       plugins = with obs-studio-plugins; [
         advanced-scene-switcher
