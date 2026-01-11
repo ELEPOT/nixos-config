@@ -58,11 +58,6 @@
     appeditor
     mpv-unwrapped
     godot-mono
-    (wrapOBS {
-      plugins = with obs-studio-plugins; [
-        advanced-scene-switcher
-      ];
-    })
     protonvpn-gui
     audacity
     gnome-software
@@ -212,6 +207,19 @@
         app-switcher-popup-include-show-apps-icon = false;
       };
     };
+  };
+
+  programs.obs-studio = {
+    enable = true;
+    package = (
+      pkgs.obs-studio.override {
+        cudaSupport = true;
+      }
+    );
+
+    plugins = with pkgs.obs-studio-plugins; [
+      advanced-scene-switcher
+    ];
   };
 
   programs.alacritty = {
