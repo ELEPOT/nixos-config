@@ -70,6 +70,7 @@
     openutau
     reaper
     vital
+    obs-studio-plugins.advanced-scene-switcher
 
     keymapper
     xdg-desktop-portal
