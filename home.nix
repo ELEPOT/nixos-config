@@ -59,6 +59,11 @@
     mpv-unwrapped
     godot-mono
     obs-studio
+    (wrapObs {
+      plugins = with obs-studio-plugins; [
+        advanced-scene-switcher
+      ];
+    })
     protonvpn-gui
     audacity
     gnome-software
@@ -70,7 +75,6 @@
     openutau
     reaper
     vital
-    obs-studio-plugins.advanced-scene-switcher
 
     keymapper
     xdg-desktop-portal
