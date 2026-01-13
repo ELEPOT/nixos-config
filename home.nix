@@ -219,6 +219,7 @@
 
     plugins = with pkgs.obs-studio-plugins; [
       advanced-scene-switcher
+      obs-studio-plugins.obs-text-pthread
     ];
   };
 
