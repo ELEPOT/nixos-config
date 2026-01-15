@@ -46,7 +46,6 @@
     obsidian
     (blender-hip.override {cudaSupport = true;})
     swayimg
-    bottles
     krita
     xorg.xeyes
     chromium
