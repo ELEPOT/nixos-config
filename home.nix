@@ -220,6 +220,7 @@
     plugins = with pkgs.obs-studio-plugins; [
       advanced-scene-switcher
       obs-text-pthread
+      obs-aitum-multistream
     ];
   };
 
