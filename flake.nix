@@ -32,6 +32,7 @@
 
   outputs = {
     nixpkgs,
+    nixpkgs-master,
     home-manager,
     ...
   } @ inputs: let
@@ -44,7 +45,7 @@
 
     pkgs-master = import nixpkgs-master {
       inherit system;
-      config = {allowUnfree = true;};
+      config = {allowunfree = true;};
     };
 
     functions = {
