@@ -40,7 +40,7 @@
     # gui
     inputs.zen-browser.packages.${system}.default
     obsidian
-    (blender-hip.override {cudaSupport = true;})
+    (blender.override {cudaSupport = true;})
     swayimg
     bottles
     krita
