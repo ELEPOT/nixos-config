@@ -42,13 +42,18 @@
       config = {allowUnfree = true;};
     };
 
+    pkgs-master = import nixpkgs {
+      inherit system;
+      config = {allowUnfree = true;};
+    };
+
     functions = {
       ifExists = file: pkgs.lib.optional (builtins.pathExists file) file;
     };
   in {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       inherit system;
-      specialArgs = {inherit inputs functions;};
+      specialArgs = {inherit inputs functions pkgs-master;};
       modules = [
         ./nixos-config/configuration.nix
         ./device-specific/hardware-configuration.nix

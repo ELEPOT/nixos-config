@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  pkgs-master,
   inputs,
   functions,
   ...
@@ -83,7 +84,7 @@
     gnomeExtensions.paperwm
 
     # dev
-    inputs.nixpkgs-master.poetry
+    pkgs-master.poetry
     (gcc // {meta.priority = 1;})
 
     faudio
