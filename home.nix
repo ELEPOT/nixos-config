@@ -83,7 +83,7 @@
     gnomeExtensions.paperwm
 
     # dev
-    poetry
+    # poetry
     (gcc // {meta.priority = 1;})
 
     faudio
