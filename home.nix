@@ -104,6 +104,11 @@
       source = "${inputs.assets}/godot-themes";
       recursive = true;
     };
+
+    "./.config/REAPER" = {
+      source = "${inputs.reaper-config}";
+      recursive = true;
+    };
   };
 
   home.sessionVariables = {
