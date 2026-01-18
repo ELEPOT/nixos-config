@@ -42,7 +42,7 @@
       config = {allowUnfree = true;};
     };
 
-    pkgs-master = import nixpkgs {
+    pkgs-master = import nixpkgs-master {
       inherit system;
       config = {allowUnfree = true;};
     };
