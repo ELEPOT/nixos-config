@@ -76,7 +76,7 @@
     gnomeExtensions.paperwm
 
     # dev
-    poetry
+    inputs.nixpkgs-master.poetry
 
     faudio
   ];

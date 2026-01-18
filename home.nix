@@ -83,7 +83,7 @@
     gnomeExtensions.paperwm
 
     # dev
-    # poetry
+    inputs.nixpkgs-master.poetry
     (gcc // {meta.priority = 1;})
 
     faudio
