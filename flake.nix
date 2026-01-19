@@ -15,11 +15,6 @@
       flake = false;
     };
 
-    reaper-config = {
-      url = "github:ELEPOT/reaper-config";
-      flake = false;
-    };
-
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
     };
