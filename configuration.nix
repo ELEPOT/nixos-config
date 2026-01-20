@@ -244,7 +244,6 @@
   environment.systemPackages = with pkgs; [
     git
     vim
-    vital
   ];
 
   environment.variables = {

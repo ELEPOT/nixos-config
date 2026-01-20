@@ -68,6 +68,7 @@
     gparted
     openutau
     reaper
+    vital
 
     keymapper
     xdg-desktop-portal
