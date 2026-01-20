@@ -15,6 +15,10 @@
       flake = false;
     };
 
+    musnix = {
+      url = "github:musnix/musnix";
+    };
+
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
     };
@@ -53,6 +57,7 @@
       modules = [
         ./nixos-config/configuration.nix
         ./device-specific/hardware-configuration.nix
+        inputs.musnix.nixosModules.musnix
 
         home-manager.nixosModules.home-manager
         {
