@@ -199,8 +199,6 @@
     };
   };
 
-  musnix.enable = true;
-
   security.rtkit.enable = true;
 
   services.udev.packages = with pkgs; [
