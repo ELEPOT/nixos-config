@@ -39,6 +39,7 @@
     pciutils
     wlr-randr
     iw
+    neofetch
 
     # tui
 
