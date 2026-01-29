@@ -40,6 +40,7 @@
     wlr-randr
     iw
     neofetch
+    steam-run
 
     # tui
 
