@@ -60,6 +60,7 @@
     appeditor
     mpv-unwrapped
     godot-mono
+    gdtoolkit_4
     protonvpn-gui
     audacity
     gnome-software
