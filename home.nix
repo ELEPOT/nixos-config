@@ -102,11 +102,6 @@
     "./.local/share/backgrounds/bg.jpg" = {
       source = "${inputs.assets}/bg.jpg";
     };
-
-    "./.var/app/org.godotengine.Godot/config/godot/text_editor_themes" = {
-      source = "${inputs.assets}/godot-themes";
-      recursive = true;
-    };
   };
 
   home.sessionVariables = {
