@@ -88,6 +88,7 @@
     # dev
     pkgs-master.poetry
     (gcc // {meta.priority = 1;})
+    nodejs_24
 
     faudio
     alsa-lib
