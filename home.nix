@@ -71,6 +71,7 @@
     openutau
     reaper
     vital
+    premid
 
     keymapper
     xdg-desktop-portal
