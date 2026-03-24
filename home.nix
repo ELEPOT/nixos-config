@@ -41,7 +41,6 @@
     iw
     neofetch
     steam-run
-    bdf2ttf
 
     # tui
 
