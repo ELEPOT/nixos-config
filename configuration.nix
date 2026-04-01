@@ -162,7 +162,7 @@
     ensurePrinters = [
       {
         name = "Brother_HL-1210W";
-        deviceUri = "http://192.168.1.170";
+        deviceUri = "http://192.168.1.114";
         model = "brother-HL1210W-cups-en.ppd";
         ppdOptions = {
           PageSize = "A4";
