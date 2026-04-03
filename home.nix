@@ -72,7 +72,6 @@
     reaper
     vital
     premid
-    synthesia
 
     keymapper
     xdg-desktop-portal
