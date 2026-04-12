@@ -72,7 +72,6 @@
     reaper
     vital
     premid
-    godot
 
     keymapper
     xdg-desktop-portal
