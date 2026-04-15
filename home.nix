@@ -39,7 +39,7 @@
     pciutils
     wlr-randr
     iw
-    neofetch
+    fastfetch
     steam-run
 
     # tui
