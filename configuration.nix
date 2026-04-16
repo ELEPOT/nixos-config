@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  pkgs-master,
   system,
   inputs,
   functions,
