@@ -45,12 +45,12 @@
     # tui
 
     # gui
-    inputs.zen-browser.packages.${system}.default
+    inputs.zen-browser.packages.${stdenv.hostPlatform.system}.default
     obsidian
     (blender.override {cudaSupport = true;})
     swayimg
     krita
-    xorg.xeyes
+    xeyes
     chromium
     lunar-client
     prismlauncher
@@ -60,7 +60,7 @@
     appeditor
     mpv-unwrapped
     gdtoolkit_4
-    protonvpn-gui
+    proton-vpn
     audacity
     gnome-software
     jetbrains-toolbox
@@ -256,6 +256,8 @@
 
       autocmd BufEnter *.nix set tabstop=2 softtabstop=2 shiftwidth=2
     '';
+    withRuby = true;
+    withPython3 = true;
   };
 
   programs.git = {

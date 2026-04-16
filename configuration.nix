@@ -1,7 +1,7 @@
 {
   config,
   pkgs,
-  system,
+  pkgs.stdenv.hostPlatform.system,
   inputs,
   functions,
   ...
