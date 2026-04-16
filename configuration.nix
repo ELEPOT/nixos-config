@@ -242,8 +242,86 @@
   };
 
   environment.systemPackages = with pkgs; [
+    # cli tools
+    htop
+    wev # keytester
+    wget
+    rsync # better cp
+    ntfs3g # ntfs disk fixer
+    progress
+    toybox
+    nmap
+    libnotify
+    alejandra # .nix formatter
+    file
+    unzip
+    murmur
+    fontconfig
+    libguestfs-with-appliance # mount vhdx
+    ffmpeg
+    yt-dlp
+    libheif
+    tree
+    lm_sensors
+    mutter
+    pciutils
+    wlr-randr
+    iw
+    fastfetch
+    steam-run
     git
     vim
+
+    # tui
+
+    # gui
+    inputs.zen-browser.packages.${stdenv.hostPlatform.system}.default
+    obsidian
+    (blender.override {cudaSupport = true;})
+    swayimg
+    krita
+    xeyes
+    chromium
+    lunar-client
+    prismlauncher
+    anki-bin
+    bc
+    mumble
+    appeditor
+    mpv-unwrapped
+    gdtoolkit_4
+    proton-vpn
+    audacity
+    gnome-software
+    jetbrains-toolbox
+    vscode
+    codeblocks
+    betterdiscordctl
+    gparted
+    openutau
+    reaper
+    vital
+
+    keymapper
+    xdg-desktop-portal
+    kdePackages.xdg-desktop-portal-kde
+    gnome-tweaks
+    adw-gtk3
+    wl-clipboard
+
+    # gnome extensions
+    gnomeExtensions.kimpanel
+    gnomeExtensions.workspaces-indicator-by-open-apps
+    gnomeExtensions.advanced-alttab-window-switcher
+    gnomeExtensions.paperwm
+
+    # dev
+    pkgs-master.poetry
+    (gcc // {meta.priority = 1;})
+    nodejs_24
+
+    faudio
+    alsa-lib
   ];
 
   environment.variables = {

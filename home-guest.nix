@@ -13,75 +13,6 @@
 
   home.stateVersion = "25.05";
 
-  home.packages = with pkgs; [
-    # cli tools
-    htop
-    wev # keytester
-    wget
-    rsync # better cp
-    ntfs3g # ntfs disk fixer
-    progress
-    toybox
-    nmap
-    libnotify
-    alejandra # .nix formatter
-    file
-    unzip
-    murmur
-    fontconfig
-    libguestfs-with-appliance # mount vhdx
-    ffmpeg
-    yt-dlp
-    libheif
-    tree
-    lm_sensors
-
-    # tui
-
-    # gui
-    inputs.zen-browser.packages.${system}.default
-    obsidian
-    (blender.override {cudaSupport = true;})
-    swayimg
-    bottles
-    krita
-    xorg.xeyes
-    chromium
-    lunar-client
-    prismlauncher
-    anki-bin
-    bc
-    mumble
-    appeditor
-    mpv-unwrapped
-    godot
-    obs-studio
-    protonvpn-gui
-    audacity
-    gnome-software
-    jetbrains-toolbox
-    codeblocks
-    betterdiscordctl
-
-    keymapper
-    xdg-desktop-portal
-    kdePackages.xdg-desktop-portal-kde
-    gnome-tweaks
-    adw-gtk3
-    wl-clipboard
-
-    # gnome extensions
-    gnomeExtensions.kimpanel
-    gnomeExtensions.workspaces-indicator-by-open-apps
-    gnomeExtensions.advanced-alttab-window-switcher
-    gnomeExtensions.paperwm
-
-    # dev
-    pkgs-master.poetry
-
-    faudio
-  ];
-
   home.file = {
     "./scripts" = {
       source = "${inputs.assets}/scripts";
@@ -217,6 +148,9 @@
 
       autocmd BufEnter *.nix set tabstop=2 softtabstop=2 shiftwidth=2
     '';
+
+    withRuby = true;
+    withPython3 = true;
   };
 
   programs.direnv = {
