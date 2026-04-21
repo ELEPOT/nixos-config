@@ -278,7 +278,6 @@
     # gui
     inputs.zen-browser.packages.${stdenv.hostPlatform.system}.default
     obsidian
-    (blender.override {cudaSupport = true;})
     swayimg
     krita
     xeyes
@@ -317,7 +316,6 @@
     gnomeExtensions.paperwm
 
     # dev
-    pkgs-master.poetry
     (gcc // {meta.priority = 1;})
     nodejs_24
 
