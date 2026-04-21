@@ -11,6 +11,11 @@
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  nix.gc = {
+    automatic = true;
+    options = "-d";
+  };
+
   nixpkgs.config.allowUnfree = true;
 
   boot.loader.efi.canTouchEfiVariables = true;
