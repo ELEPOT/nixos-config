@@ -306,6 +306,7 @@
     openutau
     reaper
     vital
+    godot-mono
 
     keymapper
     xdg-desktop-portal
