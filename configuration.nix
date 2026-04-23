@@ -307,7 +307,6 @@
     reaper
     vital
     godot
-    discord
 
     keymapper
     xdg-desktop-portal
