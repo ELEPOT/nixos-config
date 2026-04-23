@@ -340,6 +340,7 @@
     ELECTRON_OZONE_PLATFORM_HINT = "";
     COGL_ATLAS_DEFAULT_BLIT_MODE = "framebuffer";
     GSK_RENDERER = "ngl";
+    GSETTINGS_SCHEMA_DIR = "${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}/glib-2.0/schemas";
   };
 
   system.stateVersion = "25.11"; # Did you read the comment?
