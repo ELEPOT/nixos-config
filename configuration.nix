@@ -307,7 +307,7 @@
     reaper
     vital
     godot
-    libreoffice-fresh
+    libreoffice
 
     keymapper
     xdg-desktop-portal
@@ -341,8 +341,8 @@
     COGL_ATLAS_DEFAULT_BLIT_MODE = "framebuffer";
     GSK_RENDERER = "ngl";
     GSETTINGS_SCHEMA_DIR = "${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}/glib-2.0/schemas";
-    PYTHONPATH = "${pkgs.libreoffice-fresh-unwrapped}/lib/libreoffice/program";
-    URE_BOOTSTRAP = "vnd.sun.star.pathname:${pkgs.libreoffice-fresh-unwrapped}/lib/libreoffice/program/fundamentalrc";
+    PYTHONPATH = "${pkgs.libreoffice}/lib/libreoffice/program";
+    URE_BOOTSTRAP = "vnd.sun.star.pathname:${pkgs.libreoffice}/lib/libreoffice/program/fundamentalrc";
   };
 
   system.stateVersion = "25.11"; # Did you read the comment?
