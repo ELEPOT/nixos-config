@@ -325,6 +325,7 @@
     # dev
     (gcc // {meta.priority = 1;})
     nodejs_24
+    python
 
     faudio
     alsa-lib
