@@ -307,8 +307,8 @@
     reaper
     vital
     godot
-    libreoffice.override
-    {withJava = false;}
+    (libreoffice.override
+      {withJava = false;})
 
     keymapper
     xdg-desktop-portal
