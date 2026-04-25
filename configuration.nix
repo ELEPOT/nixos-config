@@ -1,4 +1,4 @@
-{
+
   config,
   pkgs,
   pkgs-master,
@@ -307,7 +307,7 @@
     reaper
     vital
     godot
-    libreoffice
+    libreoffice-fresh-unwrapped
 
     keymapper
     xdg-desktop-portal
