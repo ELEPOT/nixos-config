@@ -307,7 +307,7 @@
     reaper
     vital
     godot
-    libreoffice-fresh-unwrapped
+    libreoffice
 
     keymapper
     xdg-desktop-portal
