@@ -307,7 +307,8 @@
     reaper
     vital
     godot
-    libreoffice.override {python3 = python312}
+    libreoffice.override
+    {python3 = python312;}
 
     keymapper
     xdg-desktop-portal
@@ -325,7 +326,6 @@
     # dev
     (gcc // {meta.priority = 1;})
     nodejs_24
-    python
 
     faudio
     alsa-lib
