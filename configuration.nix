@@ -307,7 +307,7 @@
     reaper
     vital
     godot
-    (pkgs.libreoffice.override {python3 = python312;})
+    (pkgs.libreoffice.override {withJava = false;})
 
     keymapper
     xdg-desktop-portal
