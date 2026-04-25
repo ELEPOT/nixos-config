@@ -307,12 +307,13 @@
     reaper
     vital
     godot
-    pkgs.libreoffice-unwrapped # .override {
-    #   python3 = pkgs.python314.withPackages (python-pkgs: [
-    #     python-pkgs.pygments
-    #     python-pkgs.catppuccin
-    #   ]);
-    # }
+    pkgs.libreoffice-unwrapped.override
+    {
+      python3 = pkgs.python312.withPackages (python-pkgs: [
+        python-pkgs.pygments
+        python-pkgs.catppuccin
+      ]);
+    }
 
     keymapper
     xdg-desktop-portal
