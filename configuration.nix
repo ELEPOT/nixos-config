@@ -311,7 +311,7 @@
       unwrapped =
         pkgs.libreoffice-unwrapped.override
         {
-          python3 = pkgs.python312.withPackages (ps:
+          python3 = pkgs.python311.withPackages (ps:
             with ps; [
               pygments
               catppuccin
