@@ -307,14 +307,14 @@
     reaper
     vital
     godot
-    pkgs.python312.withPackages
-    (
-      ps:
-        with ps; [
-          pygments
-          catppuccin
-        ]
-    )
+    (pkgs.python312.withPackages
+      (
+        ps:
+          with ps; [
+            pygments
+            catppuccin
+          ]
+      ))
 
     (pkgs.libreoffice.override {
       unwrapped =
