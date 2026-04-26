@@ -313,7 +313,7 @@
           python-pkgs.pygments
           python-pkgs.catppuccin
         ]);
-      }) };
+      }); };
 
     keymapper
     xdg-desktop-portal
