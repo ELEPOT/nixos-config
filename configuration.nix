@@ -105,6 +105,7 @@
       noto-fonts
       noto-fonts-color-emoji
       nerd-fonts.jetbrains-mono
+      cascadia-code
     ];
 
     fontDir.enable = true;
