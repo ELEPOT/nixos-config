@@ -308,13 +308,17 @@
     vital
     godot
 
-    (pkgs.libreoffice.override {
-      unwrapped =
-        pkgs.libreoffice-unwrapped.override
-        {
-          python3 = pkgs.python312.withPackages (ps: with ps; [pygments catppuccin]);
-        };
-    })
+    (let
+      loPython = libreoffice-unwrapped.python.withPackages (ps: with ps; [pygments catppuccin]);
+    in
+      libreoffice.override {
+        extraMakeWrapperArgs = [
+          "--prefix"
+          "PYTHONPATH"
+          ":"
+          "${loPython}/${loPython.sitePackages}"
+        ];
+      })
 
     keymapper
     xdg-desktop-portal
