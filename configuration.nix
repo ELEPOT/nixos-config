@@ -278,6 +278,7 @@
     steam-run
     git
     vim
+    blender
 
     # tui
 
