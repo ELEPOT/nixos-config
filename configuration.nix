@@ -278,7 +278,7 @@
     steam-run
     git
     vim
-    blender
+    (blender.override {cudaSupport = true;})
 
     # tui
 
