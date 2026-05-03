@@ -278,7 +278,7 @@
     steam-run
     git
     vim
-    (blender.override {cudaSupport = true;})
+    xdg-terminal-exec
 
     # tui
 
@@ -309,6 +309,7 @@
     reaper
     vital
     godot
+    (blender.override {cudaSupport = true;})
 
     (let
       loPython = libreoffice-unwrapped.python.withPackages (ps: with ps; [pygments catppuccin]);
