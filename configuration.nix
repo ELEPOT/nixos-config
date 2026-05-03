@@ -310,6 +310,7 @@
     vital
     godot
     (blender.override {cudaSupport = true;})
+    osu-lazer
 
     (let
       loPython = libreoffice-unwrapped.python.withPackages (ps: with ps; [pygments catppuccin]);
