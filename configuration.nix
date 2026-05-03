@@ -310,8 +310,7 @@
     vital
     godot
     (blender.override {cudaSupport = true;})
-    osu-lazer
-
+    osu-lazer-bin
     (let
       loPython = libreoffice-unwrapped.python.withPackages (ps: with ps; [pygments catppuccin]);
     in
@@ -323,24 +322,20 @@
           "${loPython}/${loPython.sitePackages}"
         ];
       })
-
     keymapper
     xdg-desktop-portal
     kdePackages.xdg-desktop-portal-kde
     gnome-tweaks
     adw-gtk3
     wl-clipboard
-
     # gnome extensions
     gnomeExtensions.kimpanel
     gnomeExtensions.workspaces-indicator-by-open-apps
     gnomeExtensions.advanced-alttab-window-switcher
     gnomeExtensions.paperwm
-
     # dev
     (gcc // {meta.priority = 1;})
     nodejs_24
-
     faudio
     alsa-lib
   ];
