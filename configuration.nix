@@ -309,7 +309,7 @@
     reaper
     vital
     godot
-    # (blender.override {cudaSupport = true;})
+    blender
     osu-lazer-bin
     (let
       loPython = libreoffice-unwrapped.python.withPackages (ps: with ps; [pygments catppuccin]);
