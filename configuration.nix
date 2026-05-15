@@ -311,6 +311,7 @@
     godot
     blender
     osu-lazer-bin
+    handbrake
     (let
       loPython = libreoffice-unwrapped.python.withPackages (ps: with ps; [pygments catppuccin]);
     in
