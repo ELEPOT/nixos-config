@@ -281,6 +281,7 @@
     xdg-terminal-exec
 
     # tui
+    opencode
 
     # gui
     inputs.zen-browser.packages.${stdenv.hostPlatform.system}.default
