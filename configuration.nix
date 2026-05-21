@@ -287,7 +287,6 @@
     inputs.zen-browser.packages.${stdenv.hostPlatform.system}.default
     obsidian
     swayimg
-    krita
     xeyes
     chromium
     lunar-client
