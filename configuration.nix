@@ -328,6 +328,8 @@
           "${loPython}/${loPython.sitePackages}"
         ];
       })
+    rPackages.affinity
+
     keymapper
     xdg-desktop-portal
     kdePackages.xdg-desktop-portal-kde
