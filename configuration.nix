@@ -279,6 +279,7 @@
     git
     vim
     xdg-terminal-exec
+    lshw
 
     # tui
     opencode
