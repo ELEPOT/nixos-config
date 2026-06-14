@@ -222,6 +222,8 @@
 
   services.fwupd.enable = true;
 
+  virtualisation.docker.enable = true;
+
   users.users.elepot = {
     isNormalUser = true;
     description = "ELEPOT";
@@ -280,6 +282,7 @@
     vim
     xdg-terminal-exec
     lshw
+    docker
 
     # tui
     opencode
