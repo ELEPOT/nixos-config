@@ -283,8 +283,8 @@
     xdg-terminal-exec
     lshw
     docker
-    gdscript-formatter
-
+    gdtoolkit_4
+    o
     # tui
     opencode
 
