@@ -284,7 +284,7 @@
     lshw
     docker
     gdtoolkit_4
-    o
+
     # tui
     opencode
 
