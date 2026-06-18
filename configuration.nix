@@ -315,6 +315,7 @@
     vital
     godot
     blender
+    krita
     osu-lazer-bin
     handbrake
     (let
