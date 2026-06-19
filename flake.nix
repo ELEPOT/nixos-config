@@ -27,6 +27,11 @@
       url = "github:catppuccin/alacritty";
       flake = false;
     };
+
+    steam-presence = {
+      url = "github:JustTemmie/steam-presence";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {

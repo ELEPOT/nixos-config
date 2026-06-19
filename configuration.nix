@@ -243,6 +243,12 @@
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
+
+    presence = {
+      enable = true;
+      steamApiKeyFile = "/run/secrets/steam_api_key";
+      userIds = ["elepot404"];
+    };
   };
 
   programs.nautilus-open-any-terminal = {
