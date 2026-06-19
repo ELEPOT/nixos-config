@@ -7,7 +7,7 @@
   functions,
   ...
 }: {
-  imports = [] ++ functions.ifExists ./../device-specific/configuration.nix;
+  imports = [inputs.steam-presence.nixosModules.steam-presence] ++ functions.ifExists ./../device-specific/configuration.nix;
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
