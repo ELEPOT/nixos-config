@@ -53,8 +53,8 @@
     fcitx5.waylandFrontend = true;
     fcitx5.addons = with pkgs; [
       qt6Packages.fcitx5-chinese-addons
+      fcitx5-mcbopomofo
       fcitx5-table-extra
-      fcitx5-chewing
       fcitx5-anthy
       fcitx5-gtk
     ];
