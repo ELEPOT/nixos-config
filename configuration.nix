@@ -71,9 +71,9 @@
           Name = "keyboard-us";
         };
 
-        "Groups/0/Items/1" = {
-          Name = "mcbopomofo";
-        };
+        #        "Groups/0/Items/1" = {
+        #          Name = "mcbopomofo";
+        #        };
 
         "Groups/0/Items/2" = {
           Name = "anthy";
