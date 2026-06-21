@@ -71,9 +71,9 @@
           Name = "keyboard-us";
         };
 
-        #        "Groups/0/Items/1" = {
-        #          Name = "mcbopomofo";
-        #        };
+        #  "Groups/0/Items/1" = {
+        #    Name = "mcbopomofo";
+        #  };
 
         "Groups/0/Items/2" = {
           Name = "anthy";
@@ -95,10 +95,10 @@
       };
 
       addons = {
-        mcbopomofo.globalSection.BopomofoKeyboardLayout = "hsu";
-        mcbopomofo.globalSection.CandidateLayout = "horizontal";
-        mcbopomofo.globalSection.SelectionKeys = "asdfghjkl";
-        mcbopomofo.globalSection.KeyHandlerCtrlEnter = "output_bpmf_reading";
+        # mcbopomofo.globalSection.BopomofoKeyboardLayout = "hsu";
+        # mcbopomofo.globalSection.CandidateLayout = "horizontal";
+        # mcbopomofo.globalSection.SelectionKeys = "asdfghjkl";
+        # mcbopomofo.globalSection.KeyHandlerCtrlEnter = "output_bpmf_reading";
       };
     };
   };
