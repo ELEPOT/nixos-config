@@ -64,7 +64,7 @@
         "Groups/0" = {
           Name = "預設";
           "Default Layout" = "us";
-          DefaultIM = "mcbopomofo";
+          DefaultIM = "keyboard-us";
         };
 
         "Groups/0/Items/0" = {
