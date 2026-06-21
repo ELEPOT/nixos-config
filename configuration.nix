@@ -58,49 +58,6 @@
       fcitx5-anthy
       fcitx5-gtk
     ];
-
-    fcitx5.settings = {
-      inputMethod = {
-        "Groups/0" = {
-          Name = "預設";
-          "Default Layout" = "us";
-          DefaultIM = "mcbopomofo";
-        };
-
-        "Groups/0/Items/0" = {
-          Name = "keyboard-us";
-        };
-
-        "Groups/0/Items/1" = {
-          Name = "mcbopomofo";
-        };
-
-        "Groups/0/Items/2" = {
-          Name = "anthy";
-        };
-
-        GroupOrder."0" = "預設";
-      };
-
-      globalOptions = {
-        "Hotkey" = {
-          EnumerateWithTriggerKeys = true;
-          EnumerateSkipFirst = false;
-        };
-
-        "Hotkey/TriggerKeys" = {};
-        "Hotkey/AltTriggerKeys"."0" = "Shift+Shift_L";
-        "Hotkey/EnumerateForwardKeys"."0" = "Alt+space";
-        "Hotkey/EnumerateBackwardKeys"."0" = "Alt+Shift+space";
-      };
-
-      addons = {
-        mcbopomofo.globalSection.BopomofoKeyboardLayout = "hsu";
-        mcbopomofo.globalSection.CandidateLayout = "horizontal";
-        mcbopomofo.globalSection.SelectionKeys = "asdfghjkl";
-        mcbopomofo.globalSection.KeyHandlerCtrlEnter = "output_bpmf_reading";
-      };
-    };
   };
 
   fonts = {
