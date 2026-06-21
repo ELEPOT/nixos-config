@@ -64,7 +64,7 @@
         "Groups/0" = {
           Name = "預設";
           "Default Layout" = "us";
-          DefaultIM = "chewing";
+          DefaultIM = "mcbopomofo";
         };
 
         "Groups/0/Items/0" = {
@@ -72,7 +72,7 @@
         };
 
         "Groups/0/Items/1" = {
-          Name = "chewing";
+          Name = "mcbopomofo";
         };
 
         "Groups/0/Items/3" = {
@@ -95,7 +95,10 @@
       };
 
       addons = {
-        chewing.globalSection.Layout = "Hsu's Keyboard";
+        mcbopomofo.globalSection.BopomofoKeyboardLayout = "hsu";
+        mcbopomofo.globalSection.CandidateLayout = "horizontal";
+        mcbopomofo.globalSection.SelectionKeys = "asdfghjkl";
+        mcbopomofo.globalSection.KeyHandlerCtrlEnter = "output_bpmf_reading";
       };
     };
   };
