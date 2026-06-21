@@ -64,18 +64,18 @@
         "Groups/0" = {
           Name = "預設";
           "Default Layout" = "us";
-          DefaultIM = "keyboard-us";
+          DefaultIM = "mcbopomofo";
         };
 
-        "Groups/0/Items/1" = {
+        "Groups/0/Items/0" = {
           Name = "keyboard-us";
         };
 
-        "Groups/0/Items/2" = {
+        "Groups/0/Items/1" = {
           Name = "mcbopomofo";
         };
 
-        "Groups/0/Items/3" = {
+        "Groups/0/Items/2" = {
           Name = "anthy";
         };
 
