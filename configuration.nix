@@ -75,7 +75,7 @@
           Name = "mcbopomofo";
         };
 
-        "Groups/0/Items/3" = {
+        "Groups/0/Items/2" = {
           Name = "anthy";
         };
 
