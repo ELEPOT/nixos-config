@@ -67,15 +67,15 @@
           DefaultIM = "keyboard-us";
         };
 
-        "Groups/0/Items/0" = {
+        "Groups/0/Items/1" = {
           Name = "keyboard-us";
         };
 
-        #  "Groups/0/Items/1" = {
-        #    Name = "mcbopomofo";
-        #  };
-
         "Groups/0/Items/2" = {
+          Name = "mcbopomofo";
+        };
+
+        "Groups/0/Items/3" = {
           Name = "anthy";
         };
 
