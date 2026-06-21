@@ -95,10 +95,10 @@
       };
 
       addons = {
-        # mcbopomofo.globalSection.BopomofoKeyboardLayout = "hsu";
-        # mcbopomofo.globalSection.CandidateLayout = "horizontal";
-        # mcbopomofo.globalSection.SelectionKeys = "asdfghjkl";
-        # mcbopomofo.globalSection.KeyHandlerCtrlEnter = "output_bpmf_reading";
+        mcbopomofo.globalSection.BopomofoKeyboardLayout = "hsu";
+        mcbopomofo.globalSection.CandidateLayout = "horizontal";
+        mcbopomofo.globalSection.SelectionKeys = "asdfghjkl";
+        mcbopomofo.globalSection.KeyHandlerCtrlEnter = "output_bpmf_reading";
       };
     };
   };
