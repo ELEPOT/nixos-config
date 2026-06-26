@@ -18,11 +18,10 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  boot.loader.efi.canTouchEfiVariables = true;
-
   boot.loader.grub = {
     enable = true;
     efiSupport = true;
+    efiInstallAsRemovable = true;
     device = "nodev";
   };
 
@@ -310,6 +309,7 @@
     nodejs_24
     faudio
     alsa-lib
+    mission-center
   ];
 
   environment.variables = {
