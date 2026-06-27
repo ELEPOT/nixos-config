@@ -310,6 +310,7 @@
     faudio
     alsa-lib
     mission-center
+    coolercontrol.coolercontrol-gui
   ];
 
   environment.variables = {
