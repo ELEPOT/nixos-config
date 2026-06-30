@@ -311,6 +311,7 @@
     alsa-lib
     mission-center
     coolercontrol.coolercontrol-gui
+    pavucontrol
   ];
 
   environment.variables = {
