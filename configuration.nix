@@ -249,6 +249,7 @@
     lshw
     docker
     gdtoolkit_4
+    windows.mingw_w64
 
     # tui
     opencode
