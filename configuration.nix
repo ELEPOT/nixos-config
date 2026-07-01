@@ -145,7 +145,7 @@
   };
 
   # Enable sound with pipewire.
-  services.pulseaudio.enable = false;
+  services.pulseaudio.enable = true;
 
   services.pipewire = {
     enable = true;
