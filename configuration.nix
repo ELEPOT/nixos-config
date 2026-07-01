@@ -156,7 +156,7 @@
     # wireplumber.enable = true;
   };
 
-  musnix.enable = true;
+  # musnix.enable = true;
 
   security.rtkit.enable = true;
 
