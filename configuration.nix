@@ -153,16 +153,7 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     jack.enable = true;
-
-    extraConfig = {
-      pipewire = {
-        "clock" = {
-          default.clock.rate = 48000;
-          default.clock.allowed-rates = [44100 48000 96000 192000];
-          default.clock.min-quantum = 16;
-        };
-      };
-    };
+    wireplumber.enable = true;
   };
 
   musnix.enable = true;
