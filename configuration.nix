@@ -240,6 +240,7 @@
     lshw
     docker
     gdtoolkit_4
+    alsa-utils
 
     # tui
     opencode
