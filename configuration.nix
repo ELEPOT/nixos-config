@@ -257,6 +257,7 @@
     # gui
     inputs.zen-browser.packages.${stdenv.hostPlatform.system}.default
     obsidian
+    discord
     swayimg
     xeyes
     chromium
