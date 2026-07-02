@@ -161,7 +161,7 @@
               {"device.name" = "alsa_card.usb-Generic_USB_Audio-00";}
             ];
             actions = {
-              "update-props" = {
+              update-props = {
                 "api.alsa.use-acp" = "false";
                 "api.alsa.path" = "hw:2,2";
               };
