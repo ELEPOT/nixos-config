@@ -148,11 +148,28 @@
 
   services.pipewire = {
     enable = true;
-    # alsa.enable = true;
-    # alsa.support32Bit = true;
-    # pulse.enable = true;
-    # jack.enable = true;
-    # wireplumber.enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
+    wireplumber = {
+      enable = true;
+      extraConfig."51-usb-mic-fix.conf" = {
+        "monitor.alsa.rules" = [
+          {
+            matches = [
+              {"device.name" = "alsa_card.usb-Generic_USB_Audio-00";}
+            ];
+            actions = {
+              "update-props" = {
+                "api.alsa.use-acp" = "false";
+                "api.alsa.path" = "hw:2,2";
+              };
+            };
+          }
+        ];
+      };
+    };
   };
 
   # musnix.enable = true;
