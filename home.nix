@@ -29,7 +29,7 @@
     };
 
     "./.config/libreoffice/4/user/config/catppuccin.soc" = {
-      source = "${inputs.assets}/catppuccin.soc" 
+      source = "${inputs.assets}/catppuccin.soc";
     };
   };
 
