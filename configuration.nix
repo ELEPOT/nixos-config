@@ -240,6 +240,7 @@
     docker
     gdtoolkit_4
     alsa-utils
+    qpwgraph
 
     # tui
     opencode
