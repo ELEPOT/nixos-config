@@ -152,22 +152,23 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     jack.enable = true;
-    wireplumber = {
-      enable = true;
-      extraConfig."51-usb-mic-fix.conf" = {
-        "monitor.alsa.rules" = [
+    wireplumber.enable = true;
+    extraConfig.pipewire = {
+      "51-usb-mic-fixed.conf" = {
+        "context.objects" = [
           {
-            matches = [
-              {"device.name" = "alsa_card.usb-Generic_USB_Audio-00";}
-            ];
-            actions = {
-              update-props = {
-                "api.alsa.use-acp" = "false";
-                "api.alsa.path" = "hw:2,2";
-              };
+            "factory" = "adapter";
+            "args" = {
+              "factory.name"    = "api.alsa.pcm.source";
+              "node.name"       = "alsa_input.usb-mic-fixed";
+              "node.description" = "USB Mic (Fixed hw:2,2)";
+              "media.class"     = "Audio/Source";
+              "api.alsa.path"   = "hw:2,2";
+              "audio.channels"  = "2";
+              "audio.position"  = "[ FL FR ]";
             };
           }
-        ];
+        ]
       };
     };
   };
