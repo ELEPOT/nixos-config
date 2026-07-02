@@ -1,4 +1,4 @@
-{
+
   config,
   pkgs,
   pkgs-master,
@@ -168,7 +168,7 @@
               "audio.position"  = "[ FL FR ]";
             };
           }
-        ]
+        ];
       };
     };
   };
