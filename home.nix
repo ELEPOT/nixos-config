@@ -204,7 +204,10 @@
 
   programs.chromium.enable = true;
 
-  programs.firefox.enable = true;
+  programs.firefox = {
+    enable = true;
+    configPath = "${config.xdg.configHome}/mozilla/firefox";
+  };
 
   programs.home-manager.enable = true;
 }
