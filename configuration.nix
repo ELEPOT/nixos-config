@@ -1,4 +1,4 @@
-
+{
   config,
   pkgs,
   pkgs-master,
@@ -159,13 +159,13 @@
           {
             "factory" = "adapter";
             "args" = {
-              "factory.name"    = "api.alsa.pcm.source";
-              "node.name"       = "alsa_input.usb-mic-fixed";
+              "factory.name" = "api.alsa.pcm.source";
+              "node.name" = "alsa_input.usb-mic-fixed";
               "node.description" = "USB Mic (Fixed hw:2,2)";
-              "media.class"     = "Audio/Source";
-              "api.alsa.path"   = "hw:2,2";
-              "audio.channels"  = "2";
-              "audio.position"  = "[ FL FR ]";
+              "media.class" = "Audio/Source";
+              "api.alsa.path" = "hw:2,2";
+              "audio.channels" = "2";
+              "audio.position" = "[ FL FR ]";
             };
           }
         ];
