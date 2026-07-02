@@ -241,6 +241,7 @@
     gdtoolkit_4
     alsa-utils
     qpwgraph
+    pulseaudio
 
     # tui
     opencode
