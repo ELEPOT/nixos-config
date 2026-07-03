@@ -324,6 +324,7 @@
     mission-center
     coolercontrol.coolercontrol-gui
     pavucontrol
+    inkscape
   ];
 
   environment.variables = {
