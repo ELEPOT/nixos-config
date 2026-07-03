@@ -28,8 +28,9 @@
       recursive = true;
     };
 
-    "./.config/libreoffice/4/user/config/catppuccin.soc" = {
-      source = "${inputs.assets}/libreoffice/catppuccin.soc";
+    "./.config/libreoffice/4/user/config" = {
+      source = "${inputs.assets}/libreoffice/palettes";
+      recursive = true;
     };
   };
 
