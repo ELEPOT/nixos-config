@@ -17,6 +17,7 @@
   };
 
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.overlays = [inputs.affinity-nix.overlays.default];
 
   boot.loader.grub = {
     enable = true;
@@ -325,6 +326,7 @@
     coolercontrol.coolercontrol-gui
     pavucontrol
     inkscape
+    affinity-v3
   ];
 
   environment.variables = {
