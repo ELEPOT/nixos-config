@@ -327,6 +327,7 @@
     pavucontrol
     inkscape
     affinity-v3
+    hotspot
   ];
 
   environment.variables = {
