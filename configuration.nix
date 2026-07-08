@@ -261,6 +261,7 @@
     alsa-utils
     qpwgraph
     pulseaudio
+    exfatprogs
 
     # tui
     opencode
