@@ -11,7 +11,6 @@
 
   nix.settings = {
     experimental-features = ["nix-command" "flakes"];
-    substituters = ["https://adithyagenie.cachix.org"];
     trusted-substituters = ["https://adithyagenie.cachix.org"];
     trusted-public-keys = ["adithyagenie.cachix.org-1:h6BSMboeVfxyrULWuRQqAyweo4AJRATekb88xotfQwc="];
   };
@@ -298,7 +297,7 @@
     reaper
     vital
     godot
-    inputs.blender-cuda.packages.${pkgs.system}.blender-with-cuda
+    # inputs.blender-cuda.packages.${pkgs.system}.blender-with-cuda
     osu-lazer-bin
     handbrake
     (let
