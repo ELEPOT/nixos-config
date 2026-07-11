@@ -293,7 +293,7 @@
     reaper
     vital
     godot
-    blender
+    inputs.blender-cuda.packages.$(pkgs.system}.blender-with-cuda
     osu-lazer-bin
     handbrake
     (let

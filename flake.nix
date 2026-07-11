@@ -36,6 +36,10 @@
     affinity-nix = {
       url = "github:mrshmllow/affinity-nix";
     };
+
+    blender-cuda = {
+      url = "github:adithyagenie/blender-cuda-nixos";
+    };
   };
 
   outputs = {
