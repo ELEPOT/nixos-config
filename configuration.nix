@@ -10,6 +10,10 @@
   imports = [inputs.steam-presence.nixosModules.steam-presence] ++ functions.ifExists ./../device-specific/configuration.nix;
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
+  nix.settings = {
+    substituters = ["https://adithyagenie.cachix.org"];
+    trusted-public-keys = ["adithyagenie.cachix.org-1:h6BSMboeVfxyrULWuRQqAyweo4AJRATekb88xotfQwc="];
+  };
 
   nix.gc = {
     automatic = true;
@@ -293,7 +297,7 @@
     reaper
     vital
     godot
-    inputs.blender-cuda.packages.$(pkgs.system}.blender-with-cuda
+    inputs.blender-cuda.packages.${pkgs.system}.blender-with-cuda
     osu-lazer-bin
     handbrake
     (let
