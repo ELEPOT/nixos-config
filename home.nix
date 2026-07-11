@@ -178,6 +178,11 @@
 
       set clipboard=unnamedplus
 
+      call plug#begin('~/.vim/plugged')
+      Plug '/tmp/vim-be-good' " path to your vim-be-good fork
+      call plug#end()
+
+
       autocmd BufEnter *.nix set tabstop=2 softtabstop=2 shiftwidth=2
     '';
     withRuby = true;
