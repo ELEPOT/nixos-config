@@ -293,8 +293,7 @@
     reaper
     vital
     godot
-    (blender.override
-      {config.cudaSupport = true;})
+    (blender.override {config.cudaSupport = true;})
     osu-lazer-bin
     handbrake
     (let
