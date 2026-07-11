@@ -20,6 +20,17 @@
     options = "-d";
   };
 
+  nix = {
+    daemonIOSchedClass = lib.mkDefault "idle";
+    daemonCPUSchedPolicy = lib.mkDefault "idle";
+  };
+  # put the service in top-level slice
+  # so that it's lower than system and user slice overall
+  # instead of only being lower in system slice
+  systemd.services.nix-daemon.serviceConfig.Slice = "-.slice";
+  # always use the daemon, even executed  with root
+  environment.variables.NIX_REMOTE = "daemon";
+
   nixpkgs.config.allowUnfree = true;
   nixpkgs.overlays = [inputs.affinity-nix.overlays.default];
 
@@ -297,7 +308,7 @@
     reaper
     vital
     godot
-    # inputs.blender-cuda.packages.${pkgs.system}.blender-with-cuda
+    inputs.blender-cuda.packages.${pkgs.system}.blender-with-cuda
     osu-lazer-bin
     handbrake
     (let
