@@ -262,6 +262,7 @@
     qpwgraph
     pulseaudio
     exfatprogs
+    nix-ld
 
     # tui
     opencode
