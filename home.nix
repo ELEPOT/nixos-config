@@ -184,7 +184,7 @@
     withPython3 = true;
     plugins = with pkgs.vimPlugins; [
       vim-be-good
-    ]
+    ];
   };
 
   programs.git = {
