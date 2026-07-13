@@ -194,6 +194,7 @@
         clangd = {
           enable = true;
           filetypes = ["*.cpp" "*.c" "*.h"];
+        };
       };
     };
 
