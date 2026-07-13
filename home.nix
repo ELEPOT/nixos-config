@@ -189,6 +189,13 @@
       }
     ];
 
+    keymaps = [
+      {
+        action = "<cmd>g++ % -o a.out && ./a.out"
+        key = "<C-j>"
+      }
+    ]
+
     plugins = {
       lsp = {
         enable = true;
