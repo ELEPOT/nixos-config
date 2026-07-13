@@ -192,7 +192,15 @@
     keymaps = [
       {
         action = '':TermExec cmd="g++ -o a.out % && ./a.out"<CR>i'';
-        key = "<C-j>";
+        key = "<A-j>";
+      }
+      {
+        action = '':TermExec cmd="g++ -o a.out % && ./a.out < test.in"<CR>'';
+        key = "<A-S-j>";
+      }
+      {
+        action = '':vnew test.in'';
+        key = "<A-t>";
       }
       {
         action = ''<C-\><C-N>'';
