@@ -196,7 +196,7 @@
       }
       {
         action = '':ToggleTerm'';
-        key = "<C-<Space>>";
+        key = "<C-Space>";
       }
       {
         action = ''<C-\><C-N>'';
