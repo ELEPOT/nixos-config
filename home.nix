@@ -195,10 +195,6 @@
         key = "<C-j>";
       }
       {
-        action = '':ToggleTerm<CR>'';
-        key = "<C-Space>";
-      }
-      {
         action = ''<C-\><C-N>'';
         key = "<Esc>";
         mode = ["t"];
@@ -246,6 +242,9 @@
 
       toggleterm = {
         enable = true;
+        settings = {
+          open_mapping = "[[<C-\\>]]"
+        }
       };
     };
 
