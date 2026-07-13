@@ -244,7 +244,7 @@
         enable = true;
         settings = {
           open_mapping = "[[<C-\\>]]";
-        }
+        };
       };
     };
 
