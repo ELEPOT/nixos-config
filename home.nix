@@ -195,7 +195,7 @@
         key = "<C-j>";
       }
       {
-        action = '':ToggleTerm'';
+        action = '':ToggleTerm<CR>'';
         key = "<C-Space>";
       }
       {
