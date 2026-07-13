@@ -199,8 +199,17 @@
             filetypes = ["cpp" "c" "h"];
           };
         };
+      }
+
+      cmp = {
+        autoEnableSources = true;
+        settings.sources = [
+          { name = "nvim_lsp"; }
+          { name = "path"; }
+          { name = "buffer"; }
+          { name = "omni"; }
+        ];
       };
-      cmp-omni.enable = true;
     };
 
     withRuby = true;
