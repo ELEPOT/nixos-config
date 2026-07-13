@@ -191,7 +191,7 @@
 
     keymaps = [
       {
-        action = ":terminal g++ % -o a.out && ./a.out<CR>";
+        action = "TermExec cmd='g++ % -o a.out && ./a.out<CR>'";
         key = "<C-j>";
       }
     ];
@@ -225,6 +225,7 @@
           };
         };
       };
+
       autoclose = {
         enable = true;
         settings = {
@@ -233,6 +234,10 @@
           };
         };
       };
+      
+      toggleterm = {
+        enable = true;
+      }
     };
 
     withRuby = true;
