@@ -222,7 +222,6 @@
         enable = true;
         settings = {
           options = {
-            auto_indent = false;
             disable_when_touch = true;
           };
         };
