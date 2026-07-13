@@ -191,8 +191,8 @@
 
     keymaps = [
       {
-        action = "<cmd>g++ % -o a.out && ./a.out"
-        key = "<C-j>"
+        action = "<cmd>g++ % -o a.out && ./a.out";
+        key = "<C-j>";
       }
     ]
 
