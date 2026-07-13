@@ -167,23 +167,41 @@
     };
   };
 
-  programs.neovim = {
-    enable = true;
-    extraConfig = ''
-      set relativenumber
+  #programs.neovim = {
+  #  enable = true;
+  #  extraConfig = ''
+  #    set relativenumber
 
-      set expandtab
-      set tabstop=4 softtabstop=4 shiftwidth=4
+  #    set expandtab
+  #    set tabstop=4 softtabstop=4 shiftwidth=4
 
-      set clipboard=unnamedplus
+  #    set clipboard=unnamedplus
 
-      autocmd BufEnter *.nix set tabstop=2 softtabstop=2 shiftwidth=2
-    '';
-    withRuby = true;
-    withPython3 = true;
-  };
+  #    autocmd BufEnter *.nix set tabstop=2 softtabstop=2 shiftwidth=2
+  #  '';
+  #};
 
   programs.nixvim = {
+    enable = true;
+
+    opts = {
+      relativenumber = true;
+      expandtab = true;
+      tabstop = 4;
+      softtabstop = 4;
+      shiftwidth = 4;
+      clipboard = unnamedplus;
+      autoCmd = [
+        {
+          command = "set tabstop=2 softtabstop=2 shiftwidth=2";
+          event = ["BufEnter"];
+          pattern = ["*.nix"];
+        }
+      ];
+    };
+    colorscheme = "catppuccin";
+    withRuby = true;
+    withPython3 = true;
   };
 
   programs.git = {
