@@ -196,7 +196,7 @@
         servers = {
           clangd = {
             enable = true;
-            filetypes = ["*.cpp" "*.c" "*.h"];
+            filetypes = ["cpp" "c" "h"];
           };
         };
       };
