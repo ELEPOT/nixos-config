@@ -190,10 +190,14 @@
     ];
 
     plugins = {
-      lsp.servers = {
-        clangd = {
-          enable = true;
-          filetypes = ["*.cpp" "*.c" "*.h"];
+      lsp = {
+        enable = true;
+        inlayHints = true;
+        servers = {
+          clangd = {
+            enable = true;
+            filetypes = ["*.cpp" "*.c" "*.h"];
+          };
         };
       };
     };
