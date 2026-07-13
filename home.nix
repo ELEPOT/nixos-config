@@ -191,7 +191,7 @@
 
     keymaps = [
       {
-        action = "<cmd>g++ % -o a.out && ./a.out<CR>";
+        action = ":terminal g++ % -o a.out && ./a.out<CR>";
         key = "<C-j>";
       }
     ];
