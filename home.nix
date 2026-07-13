@@ -194,6 +194,15 @@
         action = '':TermExec cmd="g++ -o a.out % && ./a.out"<CR>'';
         key = "<C-j>";
       }
+      {
+        action = '':ToggleTerm'';
+        key = "<C-<Space>>";
+      }
+      {
+        action = ''<C-\><C-N>'';
+        key = "<Esc>";
+        mode = ["t"];
+      }
     ];
 
     plugins = {
