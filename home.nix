@@ -226,10 +226,9 @@
             };
           };
         };
-
-        autoclose = {
-          enable = true;
-        };
+      };
+      autoclose = {
+        enable = true;
       };
     };
 
