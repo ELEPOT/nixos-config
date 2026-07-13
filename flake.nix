@@ -35,7 +35,7 @@
   };
 
   outputs = {
-    nixpkgseee
+    nixpkgs
     nixpkgs-master,
     home-manager,
     ...
