@@ -191,7 +191,7 @@
 
     keymaps = [
       {
-        action = '':TermExec cmd="g++ -o a.out % && ./a.out"<CR>'';
+        action = '':TermExec cmd="g++ -o a.out % && ./a.out"<CR>i'';
         key = "<C-j>";
       }
       {
