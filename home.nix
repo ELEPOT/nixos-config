@@ -191,14 +191,16 @@
       softtabstop = 4;
       shiftwidth = 4;
       clipboard = "unnamedplus";
-      autoCmd = [
-        {
-          command = "set tabstop=2 softtabstop=2 shiftwidth=2";
-          event = ["BufEnter"];
-          pattern = ["*.nix"];
-        }
-      ];
     };
+
+    autoCmd = [
+      {
+        command = "set tabstop=2 softtabstop=2 shiftwidth=2";
+        event = ["BufEnter"];
+        pattern = ["*.nix"];
+      }
+    ];
+
     colorscheme = "catppuccin";
     withRuby = true;
     withPython3 = true;
