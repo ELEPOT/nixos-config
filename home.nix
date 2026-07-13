@@ -190,7 +190,7 @@
       tabstop = 4;
       softtabstop = 4;
       shiftwidth = 4;
-      clipboard = unnamedplus;
+      clipboard = "unnamedplus";
       autoCmd = [
         {
           command = "set tabstop=2 softtabstop=2 shiftwidth=2";
