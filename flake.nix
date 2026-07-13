@@ -27,10 +27,15 @@
       url = "github:catppuccin/alacritty";
       flake = false;
     };
+
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
-    nixpkgs,
+    nixpkgseee
     nixpkgs-master,
     home-manager,
     ...

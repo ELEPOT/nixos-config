@@ -6,7 +6,11 @@
   functions,
   ...
 }: {
-  imports = [] ++ functions.ifExists ./../device-specific/home.nix;
+  imports =
+    [
+      inputs.nixvim.homeModules.nixvim
+    ]
+    ++ functions.ifExists ./../device-specific/home.nix;
 
   home.username = "elepot";
   home.homeDirectory = "/home/elepot";
@@ -177,6 +181,9 @@
     '';
     withRuby = true;
     withPython3 = true;
+  };
+
+  programs.nixvim = {
   };
 
   programs.git = {
