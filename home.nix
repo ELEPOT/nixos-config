@@ -191,7 +191,9 @@
 
     plugins = {
       lsp.servers = {
-        clangd.enable = true;
+        clangd = {
+          enable = true;
+          filetypes = ["*.cpp" "*.c" "*.h"];
       };
     };
 
