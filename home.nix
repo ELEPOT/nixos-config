@@ -204,10 +204,20 @@
       cmp = {
         autoEnableSources = true;
         settings.sources = [
+          {name = "nvim_lsp";}
           {name = "path";}
           {name = "buffer";}
-          {name = "omni";}
         ];
+      };
+
+      cmp-nvim-lsp = {
+        enable = true; # LSP
+      };
+      cmp-buffer = {
+        enable = true;
+      };
+      cmp-path = {
+        enable = true; # file system paths
       };
     };
 
