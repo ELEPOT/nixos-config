@@ -216,19 +216,16 @@
             "<C-j>" = "cmp.mapping.select_next_item()";
             "<C-k>" = "cmp.mapping.select_prev_item()";
           };
-
-          window = {
-            completion = {
-              border = "solid";
-            };
-            documentation = {
-              border = "solid";
-            };
-          };
         };
       };
       autoclose = {
         enable = true;
+        settings = {
+          options = {
+            auto_indent = false;
+            disable_when_touch = true;
+          };
+        };
       };
     };
 
