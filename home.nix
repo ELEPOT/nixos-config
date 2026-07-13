@@ -167,20 +167,6 @@
     };
   };
 
-  #programs.neovim = {
-  #  enable = true;
-  #  extraConfig = ''
-  #    set relativenumber
-
-  #    set expandtab
-  #    set tabstop=4 softtabstop=4 shiftwidth=4
-
-  #    set clipboard=unnamedplus
-
-  #    autocmd BufEnter *.nix set tabstop=2 softtabstop=2 shiftwidth=2
-  #  '';
-  #};
-
   programs.nixvim = {
     enable = true;
 
@@ -193,6 +179,8 @@
       clipboard = "unnamedplus";
     };
 
+    colorscheme = "catppuccin";
+
     autoCmd = [
       {
         command = "set tabstop=2 softtabstop=2 shiftwidth=2";
@@ -201,7 +189,12 @@
       }
     ];
 
-    colorscheme = "catppuccin";
+    plugins = {
+      lsp.servers = {
+        clangd.enable = true;
+      };
+    };
+
     withRuby = true;
     withPython3 = true;
   };
