@@ -206,7 +206,7 @@
         autoEnableSources = true;
         settings = {
           sources = [
-            {name = "omni";}
+            {name = "nvim_lsp";}
             {name = "path";}
             {name = "buffer";}
           ];
