@@ -234,10 +234,10 @@
           };
         };
       };
-      
+
       toggleterm = {
         enable = true;
-      }
+      };
     };
 
     withRuby = true;
