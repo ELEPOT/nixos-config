@@ -200,6 +200,7 @@
           };
         };
       };
+      cmp-omni.enable = true;
     };
 
     withRuby = true;
