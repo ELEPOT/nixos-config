@@ -322,7 +322,6 @@
     inputs.blender-cuda.packages.${pkgs.system}.blender-with-cuda
     krita
     osu-lazer-bin
-    handbrake
     libreoffice-unwrapped
     rPackages.affinity
 
