@@ -31,7 +31,20 @@
   networking.hostName = "nixos";
 
   networking.networkmanager.enable = true;
-  networking.firewall.enable = false;
+  networking.firewall = {
+    enable = true;
+    allowedTCPPorts = [47984 47989 47990 48010];
+    allowedUDPPortRanges = [
+      {
+        from = 47998;
+        to = 48000;
+      }
+      {
+        from = 8000;
+        to = 8010;
+      }
+    ];
+  };
 
   time.timeZone = "Asia/Taipei";
 
@@ -142,6 +155,13 @@
   services.printing = {
     enable = true;
     drivers = [pkgs.cups-brother-hl1210w];
+  };
+
+  services.sunshine = {
+    enable = true;
+    autoStart = true;
+    capSysAdmin = true;
+    openFirewall = true;
   };
 
   # Enable sound with pipewire.
