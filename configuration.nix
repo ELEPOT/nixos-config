@@ -285,6 +285,7 @@
     docker
     gdtoolkit_4
     ripgrep
+    nix-ld
 
     # tui
     opencode
