@@ -40,6 +40,11 @@
     blender-cuda = {
       url = "github:adithyagenie/blender-cuda-nixos";
     };
+
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {

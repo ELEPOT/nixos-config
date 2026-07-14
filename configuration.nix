@@ -262,6 +262,7 @@
     qpwgraph
     pulseaudio
     exfatprogs
+    ripgrep
     nix-ld
 
     # tui
@@ -299,6 +300,7 @@
     #  config.rocmSupport = false;
     #})
     inputs.blender-cuda.packages.${pkgs.system}.blender-with-cuda
+    krita
     osu-lazer-bin
     handbrake
     (let
@@ -312,6 +314,8 @@
           "${loPython}/${loPython.sitePackages}"
         ];
       })
+    rPackages.affinity
+
     keymapper
     xdg-desktop-portal
     kdePackages.xdg-desktop-portal-kde

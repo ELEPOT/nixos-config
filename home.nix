@@ -6,7 +6,11 @@
   functions,
   ...
 }: {
-  imports = [] ++ functions.ifExists ./../device-specific/home.nix;
+  imports =
+    [
+      inputs.nixvim.homeModules.nixvim
+    ]
+    ++ functions.ifExists ./../device-specific/home.nix;
 
   home.username = "elepot";
   home.homeDirectory = "/home/elepot";
@@ -168,23 +172,118 @@
     };
   };
 
-  programs.neovim = {
+  programs.nixvim = {
     enable = true;
-    extraConfig = ''
-      set relativenumber
 
-      set expandtab
-      set tabstop=4 softtabstop=4 shiftwidth=4
+    opts = {
+      relativenumber = true;
+      expandtab = true;
+      tabstop = 4;
+      softtabstop = 4;
+      shiftwidth = 4;
+      clipboard = "unnamedplus";
+      smartindent = true;
+    };
 
-      set clipboard=unnamedplus
+    colorscheme = "catppuccin";
 
-      autocmd BufEnter *.nix set tabstop=2 softtabstop=2 shiftwidth=2
-    '';
-    withRuby = true;
-    withPython3 = true;
-    plugins = with pkgs.vimPlugins; [
+    autoCmd = [
+      {
+        command = "set tabstop=2 softtabstop=2 shiftwidth=2";
+        event = ["BufEnter"];
+        pattern = ["*.nix"];
+      }
+    ];
+
+    keymaps = [
+      {
+        action = '':TermExec cmd="g++ -o a.out % && ./a.out" go_back=0<CR>'';
+        key = "<leader>cc";
+      }
+      {
+        action = '':TermExec cmd="g++ -o a.out % && ./a.out < test.in"<CR>'';
+        key = "<leader>cd";
+      }
+      {
+        action = '':vnew test.in<CR>'';
+        key = "<leader>t";
+      }
+      {
+        action = ''<C-\><C-N>'';
+        key = "<Esc>";
+        mode = ["t"];
+      }
+    ];
+
+    plugins = {
+      lsp = {
+        enable = true;
+        inlayHints = true;
+        servers = {
+          clangd = {
+            enable = true;
+          };
+          nixd = {
+            enable = true;
+          };
+        };
+      };
+
+      cmp = {
+        enable = true;
+        autoEnableSources = true;
+        settings = {
+          sources = [
+            {name = "nvim_lsp";}
+            {name = "path";}
+            {name = "buffer";}
+          ];
+
+          mapping = {
+            "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+            "<C-j>" = "cmp.mapping.select_next_item()";
+            "<C-k>" = "cmp.mapping.select_prev_item()";
+          };
+        };
+      };
+
+      toggleterm = {
+        enable = true;
+        settings = {
+          shade_terminals = false;
+          open_mapping = "[[<C-\\>]]";
+          winbar = {
+            enable = true;
+            name_formatter = ''              function(term)
+                            return "hello"
+                          end'';
+          };
+        };
+      };
+
+      mini-statusline = {
+        enable = true;
+      };
+
+      telescope = {
+        enable = true;
+        keymaps = {
+          "<leader>ff" = {
+            action = "find_files";
+          };
+          "<leader>fg" = {
+            action = "live_grep";
+          };
+        };
+      };
+    };
+
+    extraPlugins = with pkgs.vimPlugins; [
       vim-be-good
     ];
+
+    withRuby = true;
+    withPython3 = true;
   };
 
   programs.git = {
