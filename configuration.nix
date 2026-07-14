@@ -284,6 +284,7 @@
     lshw
     docker
     gdtoolkit_4
+    ripgrep
 
     # tui
     opencode

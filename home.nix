@@ -177,6 +177,7 @@
       softtabstop = 4;
       shiftwidth = 4;
       clipboard = "unnamedplus";
+      smartindent = true;
     };
 
     colorscheme = "catppuccin";
@@ -192,15 +193,15 @@
     keymaps = [
       {
         action = '':TermExec cmd="g++ -o a.out % && ./a.out" go_back=0<CR>'';
-        key = "<A-j>";
+        key = "<leader>cc";
       }
       {
         action = '':TermExec cmd="g++ -o a.out % && ./a.out < test.in"<CR>'';
-        key = "<A-S-j>";
+        key = "<leader>cd";
       }
       {
         action = '':vnew test.in<CR>'';
-        key = "<A-t>";
+        key = "<leader>t";
       }
       {
         action = ''<C-\><C-N>'';
@@ -244,13 +245,26 @@
       toggleterm = {
         enable = true;
         settings = {
+          shade_terminals = false;
           open_mapping = "[[<C-\\>]]";
+          winbar = {
+            enable = true;
+          };
         };
       };
 
       lualine = {
         enable = true;
       };
+
+      telescope = {
+        enable = true;
+        "<leader>ff" = {
+          action = "find_files";
+        };
+        "<leader>fg" = {
+          action = "live_grep";
+        };
     };
 
     withRuby = true;
