@@ -256,7 +256,7 @@
         };
       };
 
-      lualine = {
+      mini-statusline = {
         enable = true;
       };
 
