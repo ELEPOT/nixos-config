@@ -265,6 +265,7 @@
         "<leader>fg" = {
           action = "live_grep";
         };
+      };
     };
 
     withRuby = true;
