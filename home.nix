@@ -247,6 +247,10 @@
           open_mapping = "[[<C-\\>]]";
         };
       };
+
+      lualine = {
+        enable = true;
+      };
     };
 
     withRuby = true;
