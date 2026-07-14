@@ -259,11 +259,13 @@
 
       telescope = {
         enable = true;
-        "<leader>ff" = {
-          action = "find_files";
-        };
-        "<leader>fg" = {
-          action = "live_grep";
+        keymaps = {
+          "<leader>ff" = {
+            action = "find_files";
+          };
+          "<leader>fg" = {
+            action = "live_grep";
+          };
         };
       };
     };
