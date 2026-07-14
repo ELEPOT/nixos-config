@@ -249,6 +249,9 @@
           open_mapping = "[[<C-\\>]]";
           winbar = {
             enable = true;
+            name_formatter = "function(term)
+              return term.name
+            end";
           };
         };
       };
