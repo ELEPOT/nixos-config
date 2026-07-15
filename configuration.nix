@@ -164,6 +164,10 @@
     openFirewall = true;
   };
 
+  services.tailscale = {
+    enable = true;
+  };
+
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
 
@@ -347,7 +351,6 @@
     inkscape
     affinity-v3
     hotspot
-    tailscale
   ];
 
   environment.variables = {
