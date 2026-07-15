@@ -117,6 +117,8 @@
 
   hardware.opentabletdriver.enable = true;
 
+  hardware.uinput.enable = true;
+
   services.xserver.enable = true;
 
   services.displayManager.gdm = {
@@ -162,6 +164,10 @@
     autoStart = true;
     capSysAdmin = true;
     openFirewall = true;
+    package = pkgs.sunshine.override {
+      cudaSupport = true;
+      cudaPackages = pkgs.cudaPackages;
+    };
   };
 
   services.tailscale = {
@@ -219,13 +225,13 @@
   users.users.elepot = {
     isNormalUser = true;
     description = "ELEPOT";
-    extraGroups = ["networkmanager" "wheel" "dialout" "audio"];
+    extraGroups = ["networkmanager" "wheel" "dialout" "audio" "uinput"];
   };
 
   users.users.guest = {
     isNormalUser = true;
     description = "guest";
-    extraGroups = ["networkmanager" "wheel" "dialout" "audio"];
+    extraGroups = ["networkmanager" "wheel" "dialout" "audio" "uinput"];
   };
 
   programs.nix-ld.enable = true;
