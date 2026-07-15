@@ -347,6 +347,7 @@
     inkscape
     affinity-v3
     hotspot
+    tailscale
   ];
 
   environment.variables = {
