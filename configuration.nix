@@ -357,6 +357,7 @@
     inkscape
     affinity-v3
     hotspot
+    moonlight
   ];
 
   environment.variables = {
