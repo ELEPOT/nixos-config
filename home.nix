@@ -226,6 +226,9 @@
           nixd = {
             enable = true;
           };
+          pyright = {
+            enable = true;
+          };
         };
       };
 
@@ -245,6 +248,10 @@
             "<C-k>" = "cmp.mapping.select_prev_item()";
           };
         };
+      };
+
+      conform-nvim = {
+        enable = true;
       };
 
       toggleterm = {
